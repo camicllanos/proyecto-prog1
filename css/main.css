@@ -1,10 +1,54 @@
 * {
     box-sizing: border-box;
 }
+/* Resets */
+ul, ol{
+    padding: 0;
+}
 li{
     list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: #000;
 }
 body { 
     background-color: whitesmoke;
 }
 /* Generos y detalle de generos parte jero */
+header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(255, 0, 150, 0.5);
+}
+header li{
+    margin: 0 10px;
+}
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+}
+nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.logo {
+    border-radius: 90%;
+    height: 200px;
+}
+h1 {
+    text-align:center ;
+}
+
+/* parte Agus */
+
+
+
+
+/* parte Cami */
