@@ -16,7 +16,7 @@ body {
     background-color: whitesmoke;
 }
 /* Generos y detalle de generos parte jero */
-header {
+.header123 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -24,16 +24,13 @@ header {
     justify-content: space-between;
     background-color: rgba(255, 0, 150, 0.5);
 }
-header li{
-    margin: 0 10px;
-}
-nav {
+.nav1 {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
 }
-nav ul{
+.nav1 ul{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -42,8 +39,19 @@ nav ul{
     border-radius: 90%;
     height: 200px;
 }
-h1 {
-    text-align:center ;
+.tipo-genero{
+    text-align: center;
+}
+.lista-det{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.lista-data{
+    width: 80%;
+}
+ul img{
+    width: 20%;
 }
 
 /* parte Agus */
