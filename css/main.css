@@ -55,7 +55,19 @@ ul img{
 }
 
 /* parte Agus */
-
+.albums{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+}
+.caja{
+    width: 20%;
+    background-color: blue;
+}
+.caja img{
+    width: 80%;
+}
 
 
 
