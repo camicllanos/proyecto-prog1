@@ -99,7 +99,7 @@ ul img{
 .katy{
     display: flex;
     flex-wrap: wrap;
-    columns: unset;
+    flex-direction: row;
     width: auto;
 }
 
