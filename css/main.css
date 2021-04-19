@@ -88,3 +88,35 @@ ul img{
 
 
 /* parte Cami */
+.headertrack {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(255, 0, 150, 0.5);
+}
+.container2{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: center;
+}
+.container2 a{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.logopagina2 {
+    border-radius: 90%;
+    height: 200px;
+    
+}
+.katy{
+    display: flex;
+    flex-wrap: wrap;
+    columns: unset;
+    width: auto;
+}
+
+
