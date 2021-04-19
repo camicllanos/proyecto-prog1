@@ -142,3 +142,10 @@ ul img{
     flex-direction: row;
     width: auto;
 }
+
+@media (max-width: 768px){
+    // tablets
+}
+@media (max-width: 368px){
+    // mobile
+}
