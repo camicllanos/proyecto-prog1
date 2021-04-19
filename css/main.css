@@ -16,6 +16,7 @@ body {
     background-color: whitesmoke;
 }
 /* Generos y detalle de generos parte jero */
+/* detail generos */
 .header123 {
     display: flex;
     flex-direction: row;
@@ -42,16 +43,31 @@ body {
 .tipo-genero{
     text-align: center;
 }
-.lista-det{
+.lista-det1{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    width: 100%;
 }
 .lista-data{
-    width: 80%;
+    width: 100%;
 }
 ul img{
-    width: 20%;
+    width: 15%;
+}
+/* generos */
+.listas{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.genero{
+    width: 25%;
+    justify-content: space-between;
+}
+.genero img {
+    width: 60%;
 }
 
 /* parte Agus */
