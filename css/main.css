@@ -104,6 +104,7 @@ ul img{
 .todo{
     display: flex;
     flex-wrap: wrap;
+<<<<<<< HEAD
     flex-direction: column;
 }
 .katy{
@@ -121,3 +122,26 @@ ul img{
   width: 60px;
 }
 
+=======
+    flex-direction: row;
+    width: auto;
+}
+.pink{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: auto;
+}
+.albumes123{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+@media (max-width: 768px){
+    // tablets
+}
+@media (max-width: 368px){
+    // mobile
+}
+>>>>>>> e9025f1080ccf99139a258368230e28737c048eb
