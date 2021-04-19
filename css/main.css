@@ -118,5 +118,27 @@ ul img{
     flex-direction: row;
     width: auto;
 }
-
-
+.lana{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: auto;
+}
+.billie{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: auto; 
+}
+.sia{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: auto;
+}
+.pink{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: auto;
+}
