@@ -1,3 +1,74 @@
+* {
+    box-sizing: border-box;
+}
+/* Resets */
+ul, ol{
+    padding: 0;
+}
+li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
 body { 
     background-color: whitesmoke;
 }
+/* Generos y detalle de generos parte jero */
+.header123 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(255, 0, 150, 0.5);
+}
+.nav1 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+}
+.nav1 ul{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.logo {
+    border-radius: 90%;
+    height: 200px;
+}
+.tipo-genero{
+    text-align: center;
+}
+.lista-det{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.lista-data{
+    width: 80%;
+}
+ul img{
+    width: 20%;
+}
+
+/* parte Agus */
+.albums{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+}
+.caja{
+    width: 20%;
+    background-color: blue;
+}
+.caja img{
+    width: 80%;
+}
+
+
+
+/* parte Cami */
