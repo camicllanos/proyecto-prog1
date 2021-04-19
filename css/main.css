@@ -104,5 +104,20 @@ ul img{
 .todo{
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
+    flex-direction: column;
 }
+.katy{
+        width: 40%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+}
+
+.katyimage{
+    width: 30px;
+}
+.katytext{ 
+  width: 60px;
+}
+
