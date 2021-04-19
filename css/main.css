@@ -104,27 +104,21 @@ ul img{
 .todo{
     display: flex;
     flex-wrap: wrap;
-<<<<<<< HEAD
     flex-direction: column;
 }
 .katy{
-        width: 40%;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: space-between;
+    width: 40%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .katyimage{
     width: 30px;
 }
-.katytext{ 
-  width: 60px;
-}
-
-=======
-    flex-direction: row;
-    width: auto;
+.katytext{
+    width: 60px;
 }
 .pink{
     display: flex;
@@ -136,6 +130,13 @@ ul img{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    width: 100%;
+}
+.albumes123 img{
+    width: 30%;
+}
+.albumes123 ul li{
+    width: 50%;
 }
 
 @media (max-width: 768px){
@@ -144,4 +145,3 @@ ul img{
 @media (max-width: 368px){
     // mobile
 }
->>>>>>> e9025f1080ccf99139a258368230e28737c048eb
