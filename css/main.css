@@ -96,44 +96,16 @@ ul img{
     justify-content: space-between;
     background-color: rgba(255, 0, 150, 0.5);
 }
-.container2{
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        align-items: center;
-}
-.container2 a{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-}
 .logopagina2 {
     border-radius: 90%;
     height: 200px;
     
 }
-.katy{
+.todo{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    width: auto;
-}
-.lana{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    width: auto;
-}
-.billie{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    width: auto; 
-}
-.sia{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
+<<<<<<< HEAD
     width: auto;
 }
 .pink{
@@ -148,4 +120,6 @@ ul img{
 }
 @media (max-width: 368px){
     // mobile
+=======
+>>>>>>> 1770903baf2487e69d516dc0653ccd1a500a2c9a
 }
