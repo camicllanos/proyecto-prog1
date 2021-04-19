@@ -113,6 +113,11 @@ ul img{
     flex-direction: row;
     width: auto;
 }
+.albumes123{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
 
 @media (max-width: 768px){
     // tablets
