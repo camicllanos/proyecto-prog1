@@ -114,26 +114,16 @@ body {
     flex-direction: column;
 
 }
-.katy{
-<<<<<<< HEAD
-        width: 40%;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: space-between;
-      
-=======
+.katy{     
     width: 40%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
->>>>>>> 238d1b6856785f6258ae2fd308d14b580564628b
 }
 .katyimage{
     width: 30px;
 }
-<<<<<<< HEAD
 .katytext{ 
   width: 60px;
     flex-direction: row;
@@ -152,10 +142,9 @@ body {
     flex-wrap: wrap;
     flex-direction: row;
     box-sizing: border-box;
-=======
-.katytext{
+}
+.katytext {
     width: 60px;
->>>>>>> 238d1b6856785f6258ae2fd308d14b580564628b
 }
 
 
