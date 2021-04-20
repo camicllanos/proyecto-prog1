@@ -21,24 +21,23 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
     background-color: rgba(255, 0, 150, 0.5);
 }
 .nav1 {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-items: center;
+    width: 100%;
 }
 .nav1 ul{
     display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 16,6%;
 }
-.logo {
+.nav1 img {
     border-radius: 90%;
     height: 200px;
+    align-items: center;
 }
 .tipo-genero{
     text-align: center;
@@ -52,7 +51,7 @@ body {
 .lista-data{
     width: 100%;
 }
-ul img{
+.img-rock{
     width: 15%;
 }
 /* generos */
@@ -129,19 +128,28 @@ ul img{
 .albumes123{
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
+    flex-direction: column;
     width: 100%;
+    justify-content: space-around;
 }
 .albumes123 img{
-    width: 30%;
-}
-.albumes123 ul li{
-    width: 50%;
+    width: 20%;
 }
 
 @media (max-width: 768px){
-    // tablets
+    .img-rock{
+        width: 40%;
+    }
+    .logo{
+        align-items: center;
+    }
+    .nav1 ul{
+        text-align: center;
+    }
+
 }
 @media (max-width: 368px){
-    // mobile
+    .img-rock{
+        width: 50%;
+    }
 }
