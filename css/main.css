@@ -16,42 +16,57 @@ body {
     background-color: whitesmoke;
 }
 /* Generos y detalle de generos parte jero */
+/* detail generos */
 .header123 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: rgba(255, 0, 150, 0.5);
+}
+.nav1 {
+    width: 100%;
+}
+.nav1 ul{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    background-color: rgba(255, 0, 150, 0.5);
+    width: 16,6%;
 }
-.nav1 {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-items: center;
-}
-.nav1 ul{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-}
-.logo {
+.nav1 img {
     border-radius: 90%;
     height: 200px;
+    align-items: center;
 }
 .tipo-genero{
     text-align: center;
 }
-.lista-det{
+.lista-det1{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    width: 100%;
 }
 .lista-data{
-    width: 80%;
+    width: 100%;
 }
-ul img{
-    width: 20%;
+.img-rock{
+    width: 15%;
+}
+/* generos */
+.listas{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.genero{
+    width: 25%;
+    justify-content: space-between;
+}
+.genero img {
+    width: 60%;
 }
 
 /* parte Agus */
@@ -72,3 +87,99 @@ ul img{
 
 
 /* parte Cami */
+.header4 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(255, 0, 150, 0.5);
+}
+.header5 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(255, 0, 150, 0.5);
+}
+.logopagina2 {
+    border-radius: 90%;
+    height: 200px;
+    
+}
+.todo{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+}
+.katy{     
+    width: 40%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.katyimage{
+    width: 30px;
+}
+.katytext{ 
+  width: 60px;
+    flex-direction: row;
+    width: auto;
+    
+}
+/* Artist */
+.Bruno{
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: row ;
+
+}
+.todo2{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    box-sizing: border-box;
+}
+.katytext {
+    width: 60px;
+}
+
+
+.pink{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: auto;
+}
+.albumes123{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-around;
+}
+.albumes123 img{
+    width: 20%;
+}
+
+
+@media (max-width: 768px){
+    .img-rock{
+        width: 40%;
+    }
+    .logo{
+        align-items: center;
+    }
+    .nav1 ul{
+        text-align: center;
+    }
+
+}
+@media (max-width: 368px){
+    .img-rock{
+        width: 50%;
+    }
+}
