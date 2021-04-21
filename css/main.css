@@ -2,6 +2,8 @@
     box-sizing: border-box;
 }
 
+/* INDEX */
+
 .container {
     display: flex;
     justify-content: space-around;
@@ -155,7 +157,9 @@ h2 {
 
 .suggestions{
     text-align: center;
+    list-style-type: circle;
 }
+    
 
 p{
     text-align: center;
@@ -284,9 +288,15 @@ p{
 
 /* FIN DETALLES ARTISTS */
 
-/* DETAIL ALBUMS */
+/* DETALLES ALBUMES */
 
 .albumportada img{
+    height: 800px;
+}
+
+/* DETALLES GENERO */
+
+.detailgenreportada img{
     height: 800px;
 }
 
