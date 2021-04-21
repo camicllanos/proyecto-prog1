@@ -49,7 +49,7 @@
         }
 
 
- 
+ /* Parte listas y elementos Home*/
 .albums{
     display: flex;
     flex-wrap: wrap;
