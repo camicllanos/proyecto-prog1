@@ -10,7 +10,6 @@ li{
 }
 a{
     text-decoration: none;
-    color: #000;
 }
 
 img{
@@ -303,7 +302,7 @@ p{
     height: 800px;
 }
 
-.Bruno{
+.bruno{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row ;
@@ -323,6 +322,12 @@ p{
     width: 200px;
     height: 200px;
 }
+.todo2{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    box-sizing: border-box;
+}
 
 /* FIN DETALLES ARTISTS */
 
@@ -330,6 +335,28 @@ p{
 
 .albumportada img{
     height: 800px;
+}
+.albumes123{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-around;
+}
+.albumes123 img{
+    width: 20%;
+}
+.albumes123 div{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.albumes123 img {
+    justify-content: center;
+    width: min-content;
+}
+.aimg{
+    justify-content: center;
 }
 
 /* DETALLES GENERO */
@@ -405,9 +432,27 @@ p{
 }
 .lista-data{
     width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 .img-rock{
     width: 15%;
+}
+.lista-data h2{
+    width: 100%;
+}
+.lista-data a{
+    color: white;
+}
+.lista-data div{
+    width: 80%;
+    margin-left: 15px;
+}
+.lista-data div p{
+    text-align: left;
 }
 
 /* GENEROS */
@@ -429,7 +474,7 @@ p{
 /*  F I N   P A R T E    J E R O N I M O */
 
 /* Detalles */
-/* Parte Cami */
+/* Parte Cami 
 .header4 {
     display: flex;
     flex-direction: row;
@@ -457,55 +502,11 @@ p{
     flex-direction: column;
 
 }
-.katy{     
-    width: 40%;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
-}
-.katyimage{
-    width: 30px;
-}
-.katytext{ 
-  width: 60px;
-    flex-direction: row;
-    width: auto;
-    
-}
-/* Artist */
-
-.todo2{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    box-sizing: border-box;
-}
-
-/*
-.katytext {
-    width: 60px;
-}
-
-
-.pink{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    width: auto;
-}
-.albumes123{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    width: 100%;
-    justify-content: space-around;
-}
-.albumes123 img{
-    width: 20%;
-}
-
 */
+
+
+
+
 
 @media (max-width: 768px){
     .img-rock{
