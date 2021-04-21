@@ -8,17 +8,29 @@
     <title>Genre</title>
 </head>
 <body>
-    <header class="header123">
-        <nav class="nav1">
-            <img src="./img/logo.png" alt="" class="logo">
-            <ul>
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./playlist.html">Playlist</a></li>
-                <li><a href="./detail-album.html">Albumes</a></li>
-                <li><a href="./detail-artist.html">Artistas</a></li>
-                <li><a href="./detail-track.html">Canciones</a></li>
-            </ul>
-        </nav>
+    <header>
+        <!--Header con el logo del sitio + menus para navegar + formulario-->
+        <div class="container">
+            <div class="logo">
+                <img src="./img/logo.png" alt="logo pagina">
+            </div>
+
+            <div class="Menu">
+                <ul class="menu-lista">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="detail-track.html">Track</a></li>
+                    <li><a href="detail-artist.html">Artist</a></li>
+                    <li><a href="playlist.html">Playlist</a></li>
+                    <li><a href="genres.html">Genres</a></li>
+                    <li><a href="search-results.html">Search</a></li>
+                </ul>
+            </div>
+            <div class="Buscador1">
+                <form action="search-results.html" method="GET"></form>
+                <input type="text" placeholder="Search" name="buscador" value="">
+            </div>
+        </div>
+
     </header>
     <main>
         <h1 class="tipo-genero">GÉNEROS</h1>

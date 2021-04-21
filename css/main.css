@@ -120,6 +120,31 @@ h2 {
 
 /* FIN DEL INDEX */
 
+/* Playlist */
+
+.playlistportada img{
+    height: 800px;
+}
+
+.soundtrack{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    margin-left: 10px; 
+    text-align: center;
+}
+.corazon{
+    width: 20%;
+    background-color:black;
+    margin: 0,5%;
+    font-weight: 600;
+}
+.corazon img{
+    width: 200px;
+    height: 200px;
+}
+
 /* Diseño Footer */
  .footer{
      width: 100%;

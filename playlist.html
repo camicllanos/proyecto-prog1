@@ -16,58 +16,66 @@
     <header>
         <!--Header con el logo del sitio + menus para navegar + formulario-->
         <div class="container">
+            <div class="logo">
+                <img src="./img/logo.png" alt="logo pagina">
+            </div>
 
-            <img src="./img/logo.png" alt="logo pagina">
-            <a href="index.html">Home</a>
-            <a href="detail-track.html">Track</a>
-            <a href="detail-artist.html">Artist</a>
-            <a href="playlist.html">Playlist</a>
-            <a href="genres.html">Genres</a>
-            <a href="search-results.html">Search</a>
+            <div class="Menu">
+                <ul class="menu-lista">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="detail-track.html">Track</a></li>
+                    <li><a href="detail-artist.html">Artist</a></li>
+                    <li><a href="playlist.html">Playlist</a></li>
+                    <li><a href="genres.html">Genres</a></li>
+                    <li><a href="search-results.html">Search</a></li>
+                </ul>
+            </div>
+            <div class="Buscador1">
+                <form action="search-results.html" method="GET"></form>
+                <input type="text" placeholder="Search" name="buscador" value="">
+            </div>
         </div>
 
-        <div>
-            <form action="search-results.html" method="GET"></form>
-            <input type="text" placeholder="Search" name="buscador" value="">
-        </div>
     </header>
 
-    <div class="Favorito">
-        <h1>Your Playlist Collection</h1>
-        <p>Add all the track you love to your playlist collection </p>
+    <div class="playlistportada">
+        <img src="./img/playlistportada.png" alt="Your Playlist Collection">
     </div>
 
-    <div class="Soundtrack"> 
+    <section>
+        <h2>Agustina`s Playlist</h2> 
 
-        <ul>
-            <li>
+        <ul class="soundtrack">
+            <li class="corazon">
                 <img src="./img/justinbieber-playlist.jpeg" alt="Justin Bieber Peaches">
                 <p>Peaches</p>
             </li>
-            <li>
+            <li class="corazon">
                 <img src="./img/johnmayer-playlist.jpeg" alt="John Mayer">
                 <p>Gravity</p>
+            <li class="corazon">
+                <img src="./img/madonna_albumplaylist.jpeg" alt="Madonna">
+                <p>Girl Gone Wild</p>
             </li>
-            <li>
+            </li>
+            <li class="corazon">
                 <img src="./img/depeche-playlist.jpg" alt="De Peche Mode">
                 <p>Enjoy the Silence</p>
             </li>
-            <li>
+            <li class="corazon">
                 <img src="./img/u2-playlist.jpg" alt="U2">
                 <p>With or Without you</p>
             </li>
         </ul>
-    </div>
+    </section>
 
     <footer>
         <!-- Footer con nombre de los integrantes del grupo + iconos redes sociales-->
-        <div>
-            <p>Camila Llanos, Jerónimo Sojo, Agustina Kicillof</p>
+        <div class="footer">
             <p>2021 Soundon AB</p>
-            <p>Privacy Center</p>
-            <p>Cookies</p>
+            <p>Camila Llanos, Jerónimo Sojo, Agustina Kicillof</p>
 
-            <p class="iconos redes">
+            <p class="iconosredes">
                 <i class="fab fa-twitter"></i>
                 <i class="fab fa-facebook"></i>
                 <i class="fab fa-instagram"></i>
