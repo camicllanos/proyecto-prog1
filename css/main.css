@@ -227,6 +227,20 @@ p{
 
 /* FIN DE SEARCH RESULTS */
 
+
+/* DETALLES TRACK */
+
+.trackportada img{
+    height: 800px;
+}
+
+/* DETALLES ARTISTS */
+
+.artistportada img{
+    height: 800px;
+}
+
+
 /* Diseño Footer */
  .footer{
      width: 100%;
@@ -241,7 +255,7 @@ p{
      padding-bottom: 0px;
      font-weight: 600; 
 }
-
+/* Fin Diseño Footer */
 
 
 
