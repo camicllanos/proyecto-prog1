@@ -271,6 +271,28 @@ a{
     color: #000;
 }
 
+/* GENEROS */
+
+.listas{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    margin-left: 10px;
+    text-align: center; 
+}
+.genero{
+    width: 20%;
+    background-color:black;
+    margin: 0,5%;
+    font-weight: 600;
+}
+.genero img{
+    width: 200px;
+    height: 200px;
+}
+
+/* FIN DE GENEROS */
 
 /* Generos y detalle de generos parte jero */
 /* detail generos */
