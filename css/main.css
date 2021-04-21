@@ -318,11 +318,23 @@ p{
     width: 200px;
     height: 200px;
 }
-.todo2{
+.todo2, .mars{             /*ver q onda*/
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    box-sizing: border-box;
+    
+}
+.mars h2{
+    width: 100%;
+}
+
+.mars div{
+    width: 80%;
+    margin-left: 15px;
+
+}
+.mars div p{
+    text-align: left;
 }
 
 /* FIN DETALLES ARTISTS */
@@ -339,9 +351,7 @@ p{
     width: 100%;
     justify-content: space-around;
 }
-.albumes123 img{
-    width: 20%;
-}
+
 .albumes123 div{
     align-items: center;
     justify-content: center;
@@ -352,9 +362,19 @@ p{
     width: min-content;
 }
 .aimg{
-    justify-content: center;
+    width: 100%;
 }
+.aimg img{
+    width: 500px;
+    height: 500px;
+}
+.albumes123 div ul{
+    color: blueviolet;
 
+}
+.albumes123 div h2{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
 /* DETALLES GENERO */
 
 .detailgenreportada img{
