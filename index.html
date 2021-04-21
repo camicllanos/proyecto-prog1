@@ -16,26 +16,35 @@
     <header>
         <!--Header con el logo del sitio + menus para navegar + formulario-->
         <div class="container">
+            <div class="logo">
+                <a href="index.html"><i><img src="./img/logo.png" alt="logo pagina"></i></a>
+            </div>
 
-            <img src="./img/logopagina.png" alt="logo pagina">
-            <a href="index.html">Home</a>
-            <a href="detail-track.html">Track</a>
-            <a href="detail-artist.html">Artist</a>
-            <a href="playlist.html">Playlist</a>
-            <a href="genres.html">Genres</a>
-            <a href="search-results.html">Search</a>
-        </div>
-
-        <div>
-            <form action="search-results.html" method="GET"></form>
-            <input type="text" placeholder="Search" name="buscador" value="">
+            <div class="Menu">
+                <ul class="menu-lista">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="detail-track.html">Track</a></li>
+                    <li><a href="detail-artist.html">Artist</a></li>
+                    <li><a href="genres.html">Genres</a></li>
+                    <li><a href="playlist.html">Playlist</a></li>
+                    <li><a href="search-results.html">Search</a></li>
+                </ul>
+            </div>
+            <div class="Buscador1">
+                <form action="search-results.html" method="GET"></form>
+                <input type="text" placeholder="Search" name="buscador" value="">
+            </div>
         </div>
 
     </header>
 
-    <div>
+    <div class="imagenportada">
+        <img src="./img/musiciseverywhere.png" alt="Music is Everywhere">
+    </div>
+
+    <section>
         <!--Listas desordenadas para armar los 3 listados con sus 5 elementos-->
-        <h1>Albums</h1>
+        <h2>Albums</h2>
         <ul class="albums">
             <li class="caja">
                 <a href="detail-album.html"><i><img src="./img/album-theweeknd.jpeg" alt="The Weeknd"></i></a>
@@ -60,77 +69,75 @@
             </li>
 
         </ul>
-    </div>
+    </section>
 
-    <div>
-        <h1>Artists</h1>
-        <ul>
-            <li>
+    <section>
+        <h2>Artists</h2>
+        <ul class="artists">
+            <li class="circulo">
                 <a href="detail-artist.html"><i><img src="./img/artista-brunomars.jpeg" alt="Bruno Mars"></i></a>
                 <p>Bruno Mars</p>
             </li>
-            <li>
+            <li class="circulo">
                 <a href="detail-artist.html"><i><img src="./img/artista-dualipa.jpeg" alt="Dua Lipa"></i></a>
                 <p>Dua Lipa</p>
             </li>
-            <li>
+            <li class="circulo">
                 <a href="detail-artist.html"><i><img src="./img/artista-onedirection.png" alt="One Direction"></i></a>
                 <p>One Direction</p>
             </li>
-            <li>
+            <li class="circulo">
                 <a href="detail-artist.html"><i><img src="./img/artista-rihanna.jpeg" alt="Rihanna"></i></a>
                 <p>Rihanna</p>
             </li>
-            <li>
+            <li class="circulo">
                 <a href="detail-artist.html"><i><img src="./img/artista-tini.jpeg" alt="Tini"></a></i>
                 <p>Tini Stoessel</p>
             </li>
         </ul>
-    </div>
+    </section>
 
-    <div>
-        <h1>Songs</h1>
-        <ul>
-            <li>
+    <section>
+        <h2>Songs</h2>
+        <ul class="songs">
+            <li class="triangulo">
                 <a href="detail-track.html"><i><img src="./img/song-billie.jpeg" alt="Billie Eilish"></i></a>
                 <p>Bad Guy</p>
-                <p>Billie Eilish</p>
+                <p>By: Billie Eilish</p>
             </li>
-            <li>
+            <li class="triangulo">
                 <a href="detail-track.html"><i><img src="./img/song-katyperry.jpeg" alt="Katy Perry"></i></a>
                 <p>Firework</p>
-                <p>Katy Perry</p>
+                <p>By: Katy Perry</p>
             </li>
-            <li>
+            <li class="triangulo">
                 <a href="detail-track.html"><i><img src="./img/song-lanadelrey.jpg" alt="Lana Del Rey"></i></a>
                 <p>Summertime Sadness</p>
-                <p>Lana Del Rey</p>
+                <p>By: Lana Del Rey</p>
             </li>
-            <li>
+            <li class="triangulo">
                 <a href="detail-track.html"><i><img src="./img/song-pink.jpeg" alt="Pink"></i></a>
                 <p>Just Give me a Reason</p>
-                <p>Pink</p>
+                <p>By: Pink</p>
             </li>
-            <li>
+            <li class="triangulo">
                 <a href="detail-track.html"><i><img src="./img/song-sia.jpg" alt="Sia"></i></a>
                 <p>Chandelier</p>
-                <p>Sia</p>
+                <p>By: Sia</p>
             </li>
         </ul>
-    </div>
+    </section>
 
 
 
 
     <footer>
         <!-- Footer con nombre de los integrantes del grupo + iconos redes sociales-->
-        <div>
-            <p>Camila Llanos, Jerónimo Sojo, Agustina Kicillof</p>
+        <div class="footer">
             <p>2021 Soundon AB</p>
-            <p>Privacy Center</p>
-            <p>Cookies</p>
+            <p>Camila Llanos, Jerónimo Sojo, Agustina Kicillof</p>
 
-            <p class="iconos redes">
+            <p class="iconosredes">
                 <i class="fab fa-twitter"></i>
                 <i class="fab fa-facebook"></i>
                 <i class="fab fa-instagram"></i>

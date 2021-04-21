@@ -16,32 +16,137 @@
     <header>
         <!--Header con el logo del sitio + menus para navegar + formulario-->
         <div class="container">
+            <div class="logo">
+                <img src="./img/logo.png" alt="logo pagina">
+            </div>
 
-            <img src="./img/logopagina.png" alt="logo pagina">
-            <a href="index.html">Home</a>
-            <a href="detail-track.html">Track</a>
-            <a href="detail-artist.html">Artist</a>
-            <a href="playlist.html">Playlist</a>
-            <a href="genres.html">Genres</a>
-            <a href="search-results.html">Search</a>
+            <div class="Menu">
+                <ul class="menu-lista">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="detail-track.html">Track</a></li>
+                    <li><a href="detail-artist.html">Artist</a></li>
+                    <li><a href="genres.html">Genres</a></li>
+                    <li><a href="playlist.html">Playlist</a></li>
+                    <li><a href="search-results.html">Search</a></li>
+                </ul>
+            </div>
+            <div class="Buscador1">
+                <form action="search-results.html" method="GET"></form>
+                <input type="text" placeholder="Search" name="buscador" value="">
+            </div>
         </div>
+
+    </header>
+
+    <div class="searchportada">
+        <img src="./img/searchportada.png" alt="The results of your search are displayed below">
+    </div>
 
         <div>
-            <form action="search-results.html" method="GET"></form>
-            <input type="text" placeholder="Search" name="buscador" value="">
+            <h2>NO RESULTS</h2>
+            <ul class="suggestions">
+                <li class="try">Try a new Search</li>
+                <li class="try">Try other keywords</li>
+                <li class="try">Looking for a song or an album?</li>
+                <li class="try">Try a genre like Latin, Rock or Pop</li>
+            </ul>
         </div>
-      </header>
+
+        <section>
+            <h3>EXPLORE TITLES RELATED TO: TELEPHONE</h3>
+            <h2>Artists</h2>
+            <ul class="searchartist">
+                <li class="mickey">
+                    <a href="detail-artist.html"><i><img src="./img/ollymurs-searchartist.jpeg" alt="Olly Murs"></i></a>
+                    <p>Olly Murs</p>
+                </li>
+                <li class="mickey">
+                    <a href="detail-artist.html"><i><img src="./img/johnnewman-searchartist.jpg" alt="John Newman"></i></a>
+                    <p>John Newman</p>
+                </li>
+                <li class="mickey">
+                    <a href="detail-artist.html"><i><img src="./img/davidguetta-searchartist.jpeg" alt="David Guetta"></i></a>
+                    <p>David Guetta</p>
+                </li>
+                <li class="mickey">
+                    <a href="detail-artist.html"><i><img src="./img/avicii-searchartist.jpg" alt="Avicii"></i></a>
+                    <p>Avicii</p>
+                </li>
+                <li class="mickey">
+                    <a href="detail-artist.html"><i><img src="./img/artista-rihanna.jpeg" alt="Rihanna"></i></a>
+                    <p>Rihanna</p>
+                </li>
+            </ul>
+
+        </section>
+
+        <section>
+            <h2>Songs</h2>
+            <ul class="searchtrack">
+                <li class="stitch">
+                    <a href="detail-track.html"><i><img src="./img/calvinharris-searchsongs.jpeg" alt="Calvin Harris"></i></a>
+                    <p>Will Be Coming Back</p>
+                    <p>By: Calvin Harris</p>
+                </li>
+                <li class="stitch">
+                    <a href="detail-track.html"><i><img src="./img/capitalcities-searchsong.jpeg" alt="Capital Cities"></i></a>
+                    <p>Safe and Sound</p>
+                    <p>By: Capital Cities</p>
+                </li>
+                <li class="stitch">
+                    <a href="detail-track.html"><i><img src="./img/kygo-searchsongs.jpeg" alt="Kygo"></i></a>
+                    <p>Firestone</p>
+                    <p>By: Kygo</p>
+                </li>
+                <li class="stitch">
+                    <a href="detail-track.html"><i><img src="./img/song-lanadelrey.jpg" alt="Lana Del Rey"></i></a>
+                    <p>Young and Beautiful</p>
+                    <p>By: Lana Del Rey</p>
+                </li>
+                <li class="stitch">
+                    <a href="detail-track.html"><i><img src="./img/song-sia.jpg" alt="Sia"></i></a>
+                    <p>Alive</p>
+                    <p>By: Sia</p>
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Albums</h2>
+            <ul class="searchalbum">
+                <li class="lilo">
+                    <a href="detail-album.html"><i><img src="./img/ladygaga-searchalbum.png" alt="Lady Gaga"></i></a>
+                    <p>Chromatica</p>
+                </li>
+                <li class="lilo">
+                    <a href="detail-album.html"><i><img src="./img/jennifer-searchalbum.png" alt="Jenifer Lopez"></i></a>
+                    <p>On The Floor</p>
+                </li>
+                <li class="lilo">
+                    <a href="detail-album.html"><i><img src="./img/album-theweeknd.jpeg" alt="The Weeknd"></i></a>
+                    <p>After Hours</p>
+                </li>
+                <li class="lilo">
+                    <a href="detail-album.html"><i><img src="./img/album-coldplay.jpeg" alt="Coldplay"></i></a>
+                    <p>A Head Full of Dreams</p>
+                </li>
+                <li class="lilo">
+                    <a href="detail-album.html"><i><img src="./img/album-imaginedragons.jpeg" alt="Imagine Dragons"></i></a>
+                    <p>Evolve</p>
+                </li>
+            </ul>
+        </div>
+
+    </section>
 
 
-      <footer>
+    <footer>
         <!-- Footer con nombre de los integrantes del grupo + iconos redes sociales-->
-        <div>
-            <p>Camila Llanos, Jerónimo Sojo, Agustina Kicillof</p>
+        <div class="footer">
             <p>2021 Soundon AB</p>
-            <p>Privacy Center</p>
-            <p>Cookies</p>
+            <p>Camila Llanos, Jerónimo Sojo, Agustina Kicillof</p>
 
-            <p class="iconos redes">
+            <p class="iconosredes">
                 <i class="fab fa-twitter"></i>
                 <i class="fab fa-facebook"></i>
                 <i class="fab fa-instagram"></i>

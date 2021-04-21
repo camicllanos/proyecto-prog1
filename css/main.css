@@ -1,7 +1,7 @@
 * {
     box-sizing: border-box;
 }
-/* Parte Agus */
+
 ul, ol{
     padding: 0;
 }
@@ -12,11 +12,361 @@ a{
     text-decoration: none;
     color: #000;
 }
-body { 
-    background-color: whitesmoke;
+
+/* P A R T E    A G U S T I N A */
+
+/* INDEX */
+
+.container {
+    display: flex;
+    justify-content: space-around;
 }
-/* Generos y detalle de generos parte jero */
-/* detail generos */
+    
+.menu-lista{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: 500;
+}
+    
+.menu-lista li {
+    padding: 15px;
+          
+}
+    
+.menu-lista li a {
+    color: white;
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+        
+}
+
+body { 
+    background-color: black;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+           
+}
+
+.logo img{
+    width: 200px;
+    height: 80px;
+
+}
+.container .Buscador1{ 
+    align-items: center;
+    padding-top: 30px;
+}
+
+.imagenportada img{
+    height: 800px;
+}
+
+
+ /* Listas y elementos index.htm */
+
+ /* Lista numero 1 Albums */ 
+.albums{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    margin-left: 10px;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+.caja{
+    width: 20%;
+    background-color:black;
+    margin: 0,5%;
+    font-weight: 600;
+    
+}
+.caja img{
+    width: 200px;
+    height: 200px;
+    
+}
+/* Lista numero 2 Artists */
+
+.artists{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    margin-left: 10px; 
+    text-align: center;
+}
+.circulo{
+    width: 20%;
+    background-color:black;
+    margin: 0,5%;
+    font-weight: 600;
+}
+.circulo img{
+    width: 200px;
+    height: 200px;
+}
+
+/* Lista numero 3 Songs */
+
+.songs{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    margin-left: 10px;
+    text-align: center; 
+}
+.triangulo{
+    width: 20%;
+    background-color:black;
+    margin: 0,5%;
+    font-weight: 600;
+}
+.triangulo img{
+    width: 200px;
+    height: 200px;
+}
+
+/* FIN DEL INDEX */
+
+/* PLAYLIST */
+
+.playlistportada img{
+    height: 800px;
+}
+
+.soundtrack{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    margin-left: 10px; 
+    text-align: center;
+}
+.corazon{
+    width: 20%;
+    background-color:black;
+    margin: 0,5%;
+    font-weight: 600;
+}
+.corazon img{
+    width: 200px;
+    height: 200px;
+}
+
+/* FIN DE PLAYLIST */
+
+/* SEARCH RESULTS */
+
+.searchportada img{
+    height: 800px;
+}
+
+.suggestions{
+    text-align: center;
+    list-style-type: circle;
+}
+    
+
+p{
+    text-align: center;
+}
+
+
+/* Listado numero 1 artist */
+
+.searchartist{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    margin-left: 10px;
+    text-align: center; 
+}
+.mickey{
+    width: 20%;
+    background-color:black;
+    margin: 0,5%;
+    font-weight: 600;
+}
+.mickey img{
+    width: 200px;
+    height: 200px;
+}
+
+/* Listado numero 2 Songs */
+
+.searchtrack{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    margin-left: 10px;
+    text-align: center; 
+}
+.stitch{
+    width: 20%;
+    background-color:black;
+    margin: 0,5%;
+    font-weight: 600;
+}
+.stitch img{
+    width: 200px;
+    height: 200px;
+}
+
+/* Listado numero 3 Albums */
+
+.searchalbum{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    margin-left: 10px;
+    text-align: center; 
+}
+.lilo{
+    width: 20%;
+    background-color:black;
+    margin: 0,5%;
+    font-weight: 600;
+}
+.lilo img{
+    width: 200px;
+    height: 200px;
+}
+
+/* FIN DE SEARCH RESULTS */
+
+/* DISEÑO FOOTER */
+.footer{
+    width: 100%;
+    height: 50px;
+    color: white;
+    background-color: #85DFAC;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    justify-content: space-around;
+    margin-top: 3px;
+    padding-bottom: 0px;
+    font-weight: 600; 
+}
+/* FIN DISEÑO FOOTER */
+
+/*  F I N   P A R T E    A G U S T I N A */
+
+
+/* P A R T E    C A M I L A */
+
+/* DETALLES TRACK */
+
+.trackportada img{
+    height: 800px;
+}
+
+.narnia{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+    margin-left: 10px;
+    text-align: center; 
+}
+.zeus{
+    width: 20%;
+    background-color:black;
+    margin: 0,5%;
+    font-weight: 600;
+}
+.zeus img{
+    width: 200px;
+    height: 200px;
+}
+
+/* FIN DETALLES TRACK */
+
+/* DETALLES ARTISTS */
+
+.artistportada img{
+    height: 800px;
+}
+
+.Bruno{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row ;
+    width: 100%;
+    margin-left: 10px;
+    text-align: center; 
+ 
+ }
+
+ mars{
+    width: 20%;
+    background-color:black;
+    margin: 0,5%;
+    font-weight: 600;
+}
+.mars img{
+    width: 200px;
+    height: 200px;
+}
+
+/* FIN DETALLES ARTISTS */
+
+/* DETALLES ALBUMES */
+
+.albumportada img{
+    height: 800px;
+}
+
+/* DETALLES GENERO */
+
+.detailgenreportada img{
+    height: 800px;
+}
+
+/* FIN DETALLES ALBUMES */
+
+/* F I N   P A R T E    C A M I L A */
+
+/* P A R T E    J E R O N I M O */
+
+/* GENEROS */
+
+.genresportada img{
+    height: 800px;
+}
+.listas{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    margin-left: 10px;
+    text-align: center; 
+}
+.genero{
+    width: 20%;
+    background-color:black;
+    margin: 0,5%;
+    font-weight: 600;
+}
+.genero img{
+    width: 200px;
+    height: 200px;
+}
+
+/* FIN DE GENEROS */
+
+/* DETALLE GENEROS */
+
 .header123 {
     display: flex;
     flex-direction: row;
@@ -54,7 +404,9 @@ body {
 .img-rock{
     width: 15%;
 }
-/* generos */
+
+/* GENEROS */
+
 .listas{
     display: flex;
     flex-direction: row;
@@ -69,24 +421,10 @@ body {
     width: 60%;
 }
 
-/* parte Agus */
-.albums{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    width: 100%;
-}
-.caja{
-    width: 20%;
-    background-color: blue;
-}
-.caja img{
-    width: 80%;
-}
+/*  F I N   P A R T E    J E R O N I M O */
 
-
-
-/* parte Cami */
+/* Detalles */
+/* Parte Cami */
 .header4 {
     display: flex;
     flex-direction: row;
@@ -131,18 +469,15 @@ body {
     
 }
 /* Artist */
-.Bruno{
-   display: flex;
-   flex-wrap: wrap;
-   flex-direction: row ;
 
-}
 .todo2{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     box-sizing: border-box;
 }
+
+/*
 .katytext {
     width: 60px;
 }
@@ -165,6 +500,7 @@ body {
     width: 20%;
 }
 
+*/
 
 @media (max-width: 768px){
     .img-rock{
