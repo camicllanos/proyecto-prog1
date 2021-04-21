@@ -49,7 +49,9 @@
         }
 
 
- /* Parte listas y elementos Home*/
+ /* Parte listas y elementos index.htm */
+
+ /* Lista numero 1 Albums */ 
 .albums{
     display: flex;
     flex-wrap: wrap;
@@ -72,6 +74,44 @@ h2 {
     height: 200px;
     
 }
+/* Lista numero 2 Artists */
+
+.artists{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    margin-left: 40px; 
+}
+.circulo{
+    width: 20%;
+    background-color:black;
+    margin: 0,5%;
+}
+.circulo img{
+    width: 200px;
+    height: 200px;
+}
+
+/* Lista numero 2 Artists */
+
+.songs{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    margin-left: 40px; 
+}
+.triangulo{
+    width: 20%;
+    background-color:black;
+    margin: 0,5%;
+}
+.triangulo img{
+    width: 200px;
+    height: 200px;
+}
+
        
 
 
