@@ -282,7 +282,13 @@ p{
     height: 200px;
 }
 
+/* FIN DETALLES ARTISTS */
 
+/* DETAIL ALBUMS */
+
+.albumportada img{
+    height: 800px;
+}
 
 /* Diseño Footer */
  .footer{
