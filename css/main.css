@@ -10,7 +10,6 @@ li{
 }
 a{
     text-decoration: none;
-    color: #000;
 }
 
 /* P A R T E    A G U S T I N A */
@@ -400,9 +399,27 @@ p{
 }
 .lista-data{
     width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 .img-rock{
     width: 15%;
+}
+.lista-data h2{
+    width: 100%;
+}
+.lista-data a{
+    color: white;
+}
+.lista-data div{
+    width: 80%;
+    margin-left: 15px;
+}
+.lista-data div p{
+    text-align: left;
 }
 
 /* GENEROS */
