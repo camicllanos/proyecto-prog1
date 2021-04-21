@@ -234,11 +234,54 @@ p{
     height: 800px;
 }
 
+.narnia{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    margin-left: 10px;
+    text-align: center; 
+}
+.zeus{
+    width: 20%;
+    background-color:black;
+    margin: 0,5%;
+    font-weight: 600;
+}
+.zeus img{
+    width: 200px;
+    height: 200px;
+}
+
+/* FIN DETALLES TRACK */
+
 /* DETALLES ARTISTS */
 
 .artistportada img{
     height: 800px;
 }
+
+.Bruno{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row ;
+    width: 100%;
+    margin-left: 10px;
+    text-align: center; 
+ 
+ }
+
+ mars{
+    width: 20%;
+    background-color:black;
+    margin: 0,5%;
+    font-weight: 600;
+}
+.mars img{
+    width: 200px;
+    height: 200px;
+}
+
 
 
 /* Diseño Footer */
@@ -401,12 +444,7 @@ a{
     
 }
 /* Artist */
-.Bruno{
-   display: flex;
-   flex-wrap: wrap;
-   flex-direction: row ;
 
-}
 .todo2{
     display: flex;
     flex-wrap: wrap;
