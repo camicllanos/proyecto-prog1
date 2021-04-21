@@ -16,31 +16,35 @@
     <header>
         <!--Header con el logo del sitio + menus para navegar + formulario-->
         <div class="container">
+            <div class="logo">
+                <img src="./img/logo.png" alt="logo pagina">
+            </div>
 
-            <img src="./img/logo.png" alt="logo pagina">
-            <a href="index.html">Home</a>
-            <a href="detail-track.html">Track</a>
-            <a href="detail-artist.html">Artist</a>
-            <a href="playlist.html">Playlist</a>
-            <a href="genres.html">Genres</a>
-            <a href="search-results.html">Search</a>
-        </div>
-
-        <div>
-            <form action="search-results.html" method="GET"></form>
-            <input type="text" placeholder="Search" name="buscador" value="">
+            <div class="Menu">
+                <ul class="menu-lista">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="detail-track.html">Track</a></li>
+                    <li><a href="detail-artist.html">Artist</a></li>
+                    <li><a href="playlist.html">Playlist</a></li>
+                    <li><a href="genres.html">Genres</a></li>
+                    <li><a href="search-results.html">Search</a></li>
+                </ul>
+            </div>
+            <div class="Buscador1">
+                <form action="search-results.html" method="GET"></form>
+                <input type="text" placeholder="Search" name="buscador" value="">
+            </div>
         </div>
 
     </header>
 
-    <div>
-        <img src="./img/fotohome.png" alt="Music">
+    <div class="imagenportada">
         <img src="./img/musiciseverywhere.png" alt="Music is Everywhere">
     </div>
 
     <div>
         <!--Listas desordenadas para armar los 3 listados con sus 5 elementos-->
-        <h1>Albums</h1>
+        <h2>Albums</h2>
         <ul class="albums">
             <li class="caja">
                 <a href="detail-album.html"><i><img src="./img/album-theweeknd.jpeg" alt="The Weeknd"></i></a>
@@ -68,7 +72,7 @@
     </div>
 
     <div>
-        <h1>Artists</h1>
+        <h2>Artists</h2>
         <ul>
             <li>
                 <a href="detail-artist.html"><i><img src="./img/artista-brunomars.jpeg" alt="Bruno Mars"></i></a>
@@ -94,7 +98,7 @@
     </div>
 
     <div>
-        <h1>Songs</h1>
+        <h2>Songs</h2>
         <ul>
             <li>
                 <a href="detail-track.html"><i><img src="./img/song-billie.jpeg" alt="Billie Eilish"></i></a>
