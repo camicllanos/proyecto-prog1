@@ -5,48 +5,47 @@
 .container {
     display: flex;
     justify-content: space-around;
-    }
+}
     
-    .menu-lista{
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        font-weight: 500;
-        }
+.menu-lista{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: 500;
+}
     
-        .menu-lista li {
-            padding: 15px;
+.menu-lista li {
+    padding: 15px;
           
-         }
+}
     
-         .menu-lista li a {
-            color: white;
-            font-size: 16px;
-           font-family: 'Raleway', sans-serif;
+.menu-lista li a {
+    color: white;
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
         
-        }
+}
 
-        body { 
-            background-color: black;
-            font-family: 'Raleway', sans-serif;
-            color: white;
+body { 
+    background-color: black;
+    font-family: 'Raleway', sans-serif;
+    color: white;
            
-            
-        }
+}
 
-        .logo img{
-            width: 200px;
-            height: 80px;
+.logo img{
+    width: 200px;
+    height: 80px;
 
-        }
-        .container .Buscador1{ 
-            align-items: center;
-            padding-top: 30px;
-        }
+}
+.container .Buscador1{ 
+    align-items: center;
+    padding-top: 30px;
+}
 
-        .imagenportada img{
-           height: 800px;
-        }
+.imagenportada img{
+    height: 800px;
+}
 
 
  /* Parte listas y elementos index.htm */
@@ -57,7 +56,8 @@
     flex-wrap: wrap;
     flex-direction: row;
     width: 100%;
-    margin-left: 40px;
+    margin-left: 10px;
+    text-align: center;
 }
 
 h2 {
@@ -68,6 +68,8 @@ h2 {
     width: 20%;
     background-color:black;
     margin: 0,5%;
+    font-weight: 600;
+    
 }
 .caja img{
     width: 200px;
@@ -81,41 +83,57 @@ h2 {
     flex-wrap: wrap;
     flex-direction: row;
     width: 100%;
-    margin-left: 40px; 
+    margin-left: 10px; 
+    text-align: center;
 }
 .circulo{
     width: 20%;
     background-color:black;
     margin: 0,5%;
+    font-weight: 600;
 }
 .circulo img{
     width: 200px;
     height: 200px;
 }
 
-/* Lista numero 2 Artists */
+/* Lista numero 3 Songs */
 
 .songs{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     width: 100%;
-    margin-left: 40px; 
+    margin-left: 10px;
+    text-align: center; 
 }
 .triangulo{
     width: 20%;
     background-color:black;
     margin: 0,5%;
+    font-weight: 600;
 }
 .triangulo img{
     width: 200px;
     height: 200px;
 }
 
-       
+/* FIN DEL INDEX */
 
-
-
+/* Diseño Footer */
+ .footer{
+     width: 100%;
+     height: 50px;
+     color: white;
+     background-color: #85DFAC;
+     display: flex;
+     align-items: center;
+     padding: 0;
+     justify-content: space-around;
+     margin-top: 3px;
+     padding-bottom: 0px;
+     font-weight: 600; 
+}
 
 
 
