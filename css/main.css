@@ -2,6 +2,19 @@
     box-sizing: border-box;
 }
 
+ul, ol{
+    padding: 0;
+}
+li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+/* P A R T E    A G U S T I N A */
+
 /* INDEX */
 
 .container {
@@ -50,7 +63,7 @@ body {
 }
 
 
- /* Parte listas y elementos index.htm */
+ /* Listas y elementos index.htm */
 
  /* Lista numero 1 Albums */ 
 .albums{
@@ -122,7 +135,7 @@ h2 {
 
 /* FIN DEL INDEX */
 
-/* Playlist */
+/* PLAYLIST */
 
 .playlistportada img{
     height: 800px;
@@ -231,6 +244,26 @@ p{
 
 /* FIN DE SEARCH RESULTS */
 
+/* DISEÑO FOOTER */
+.footer{
+    width: 100%;
+    height: 50px;
+    color: white;
+    background-color: #85DFAC;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    justify-content: space-around;
+    margin-top: 3px;
+    padding-bottom: 0px;
+    font-weight: 600; 
+}
+/* FIN DISEÑO FOOTER */
+
+/*  F I N   P A R T E    A G U S T I N A */
+
+
+/* P A R T E    C A M I L A */
 
 /* DETALLES TRACK */
 
@@ -300,38 +333,17 @@ p{
     height: 800px;
 }
 
-/* Diseño Footer */
- .footer{
-     width: 100%;
-     height: 50px;
-     color: white;
-     background-color: #85DFAC;
-     display: flex;
-     align-items: center;
-     padding: 0;
-     justify-content: space-around;
-     margin-top: 3px;
-     padding-bottom: 0px;
-     font-weight: 600; 
-}
-/* Fin Diseño Footer */
+/* FIN DETALLES ALBUMES */
 
+/* F I N   P A R T E    C A M I L A */
 
-
-/* Parte Agus */
-ul, ol{
-    padding: 0;
-}
-li{
-    list-style-type: none;
-}
-a{
-    text-decoration: none;
-    color: #000;
-}
+/* P A R T E    J E R O N I M O */
 
 /* GENEROS */
 
+.genresportada img{
+    height: 800px;
+}
 .listas{
     display: flex;
     flex-wrap: wrap;
@@ -353,12 +365,8 @@ a{
 
 /* FIN DE GENEROS */
 
-/* Generos y detalle de generos parte jero */
-/* detail generos */
+/* DETALLE GENEROS */
 
-.genresportada img{
-    height: 800px;
-}
 .header123 {
     display: flex;
     flex-direction: row;
@@ -396,7 +404,9 @@ a{
 .img-rock{
     width: 15%;
 }
-/* generos */
+
+/* GENEROS */
+
 .listas{
     display: flex;
     flex-direction: row;
@@ -411,8 +421,7 @@ a{
     width: 60%;
 }
 
-
-
+/*  F I N   P A R T E    J E R O N I M O */
 
 /* Detalles */
 /* Parte Cami */
@@ -467,6 +476,8 @@ a{
     flex-direction: row;
     box-sizing: border-box;
 }
+
+/*
 .katytext {
     width: 60px;
 }
@@ -489,6 +500,7 @@ a{
     width: 20%;
 }
 
+*/
 
 @media (max-width: 768px){
     .img-rock{
