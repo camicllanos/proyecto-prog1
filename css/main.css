@@ -145,6 +145,88 @@ h2 {
     height: 200px;
 }
 
+/* FIN DE PLAYLIST */
+
+/* SEARCH RESULTS */
+
+.searchportada img{
+    height: 800px;
+}
+
+.suggestions{
+    text-align: center;
+}
+
+p{
+    text-align: center;
+}
+
+
+/* Listado numero 1 artist */
+
+.searchartist{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    margin-left: 10px;
+    text-align: center; 
+}
+.mickey{
+    width: 20%;
+    background-color:black;
+    margin: 0,5%;
+    font-weight: 600;
+}
+.mickey img{
+    width: 200px;
+    height: 200px;
+}
+
+/* Listado numero 2 Songs */
+
+.searchtrack{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    margin-left: 10px;
+    text-align: center; 
+}
+.stitch{
+    width: 20%;
+    background-color:black;
+    margin: 0,5%;
+    font-weight: 600;
+}
+.stitch img{
+    width: 200px;
+    height: 200px;
+}
+
+/* Listado numero 3 Albums */
+
+.searchalbum{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    margin-left: 10px;
+    text-align: center; 
+}
+.lilo{
+    width: 20%;
+    background-color:black;
+    margin: 0,5%;
+    font-weight: 600;
+}
+.lilo img{
+    width: 200px;
+    height: 200px;
+}
+
+/* FIN DE SEARCH RESULTS */
+
 /* Diseño Footer */
  .footer{
      width: 100%;
