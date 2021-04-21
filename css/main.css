@@ -274,6 +274,10 @@ a{
 
 /* Generos y detalle de generos parte jero */
 /* detail generos */
+
+.genresportada img{
+    height: 800px;
+}
 .header123 {
     display: flex;
     flex-direction: row;
