@@ -13,6 +13,11 @@ a{
     color: #000;
 }
 
+img{
+max-width:100%;
+height: auto;
+}
+
 
 /* P A R T E    A G U S T I N A */
 
@@ -58,11 +63,6 @@ body {
     align-items: center;
     padding-top: 30px;
 }
-
-.imagenportada img{
-    height: 800px;
-}
-
 
  /* Listas y elementos index.htm */
 
@@ -259,6 +259,10 @@ p{
     padding-bottom: 0px;
     font-weight: 600; 
 }
+
+.iconosredes{
+    font-size: 25px;
+} 
 /* FIN DISEÑO FOOTER */
 
 /*  F I N   P A R T E    A G U S T I N A */
