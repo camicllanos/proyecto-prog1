@@ -1,7 +1,7 @@
 * {
     box-sizing: border-box;
 }
-/* Resets */
+/* Parte Agus */
 ul, ol{
     padding: 0;
 }
@@ -87,7 +87,15 @@ body {
 
 
 /* parte Cami */
-.headertrack {
+.header4 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(255, 0, 150, 0.5);
+}
+.header5 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -104,21 +112,42 @@ body {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+
 }
-.katy{
+.katy{     
     width: 40%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
 }
-
 .katyimage{
     width: 30px;
 }
-.katytext{
+.katytext{ 
+  width: 60px;
+    flex-direction: row;
+    width: auto;
+    
+}
+/* Artist */
+.Bruno{
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: row ;
+
+}
+.todo2{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    box-sizing: border-box;
+}
+.katytext {
     width: 60px;
 }
+
+
 .pink{
     display: flex;
     flex-wrap: wrap;
@@ -135,6 +164,7 @@ body {
 .albumes123 img{
     width: 20%;
 }
+
 
 @media (max-width: 768px){
     .img-rock{
