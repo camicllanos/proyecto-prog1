@@ -231,6 +231,13 @@ h2 {
     font-size: 20px;
 }
 
+.telephone{
+    font-family:'Raleway', sans-serif;
+    font-size: 20px;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
 /* Listado numero 1 artist */
 
 .searchartist{
@@ -364,18 +371,6 @@ h2 {
     height: 200px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
 /* FIN DETALLES ARTISTS */
 
 /* DETALLES ALBUMES */
@@ -409,6 +404,7 @@ h2 {
     font-weight: 600;
     flex-direction: row;
     flex-wrap: wrap;
+    margin-left: 565px;
 }
 
 .detallesintro h2{
