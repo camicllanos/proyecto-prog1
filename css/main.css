@@ -298,7 +298,7 @@ p{
 .narnia{
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
+    flex-direction: row;
     width: 100%;
     margin-left: 10px;
     text-align: center; 
@@ -466,28 +466,6 @@ p{
 
 /* DETALLE GENEROS */
 
-.header123 {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    background-color: rgba(255, 0, 150, 0.5);
-}
-.nav1 {
-    width: 100%;
-}
-.nav1 ul{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    width: 16,6%;
-}
-.nav1 img {
-    border-radius: 90%;
-    height: 200px;
-    align-items: center;
-}
 .tipo-genero{
     text-align: center;
 }
@@ -532,7 +510,6 @@ p{
 }
 .genero{
     width: 25%;
-    justify-content: space-between;
 }
 .genero img {
     width: 60%;
