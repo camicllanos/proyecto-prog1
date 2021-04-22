@@ -301,45 +301,28 @@ p{
 .artistportada img{
     height: 800px;
 }
-
-.bruno{
+.todo2{
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    flex-direction: row ;
     width: 100%;
-    margin-left: 10px;
-    text-align: center; 
- 
- }
-
- mars{
-    width: 20%;
-    background-color:black;
-    margin: 0,5%;
-    font-weight: 600;
 }
-.mars img{
+.kilo {
     width: 200px;
     height: 200px;
 }
-.todo2, .mars{             /*ver q onda*/
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    
-}
-.mars h2{
-    width: 100%;
-}
 
-.mars div{
-    width: 80%;
-    margin-left: 15px;
 
-}
-.mars div p{
-    text-align: left;
-}
+
+
+
+
+
+
+
+
+
+
 
 /* FIN DETALLES ARTISTS */
 
@@ -379,7 +362,7 @@ p{
 .albumes123 div h2{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
-/* DETALLES GENERO */
+/* DETALLES GENERO Jero*/
 
 .detailgenreportada img{
     height: 800px;
@@ -492,41 +475,6 @@ p{
 }
 
 /*  F I N   P A R T E    J E R O N I M O */
-
-/* Detalles */
-/* Parte Cami 
-.header4 {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    background-color: rgba(255, 0, 150, 0.5);
-}
-.header5 {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    background-color: rgba(255, 0, 150, 0.5);
-}
-.logopagina2 {
-    border-radius: 90%;
-    height: 200px;
-    
-}
-.todo{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-
-}
-*/
-
-
-
-
 
 @media (max-width: 768px){
     .img-rock{
