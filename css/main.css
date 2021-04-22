@@ -371,18 +371,6 @@ h2 {
     height: 200px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
 /* FIN DETALLES ARTISTS */
 
 /* DETALLES ALBUMES */
@@ -416,6 +404,7 @@ h2 {
     font-weight: 600;
     flex-direction: row;
     flex-wrap: wrap;
+    margin-left: 565px;
 }
 
 .detallesintro h2{
