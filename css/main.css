@@ -17,6 +17,16 @@ max-width:100%;
 height: auto;
 }
 
+h1{
+    font-size: 5rem;
+    font-family:'Raleway', sans-serif;
+}
+
+h2{
+    font-size: 3rem;
+    font-family:'Raleway', sans-serif;
+}
+
 
 /* P A R T E    A G U S T I N A */
 
@@ -62,6 +72,16 @@ body {
     align-items: center;
     padding-top: 30px;
 }
+
+.imagenportada{ 
+    height: 800px;
+    background-image: url(../img/index-portada.png);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-size: contain;
+    background-repeat: no-repeat;
+} 
 
  /* Listas y elementos index.htm */
 
@@ -328,6 +348,48 @@ p{
 
 /* DETALLES ALBUMES */
 
+
+.albumes123{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    margin-left: 10px;
+    text-align: center; 
+}
+.aimg{
+    width: 20%;
+    background-color:black;
+    margin: 0,5%;
+    font-weight: 600;
+}
+.aimg img{
+    width: 200px;
+    height: 200px;
+}
+
+.albumes123 h2{
+    width: 100%;
+}
+
+.detallesintro{
+    width: 20%;
+    background-color:black;
+    margin: 0,5%;
+    font-weight: 600;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.detallesintro h2{
+    width: 100%;
+    margin-top: auto;
+    text-align: center;
+    margin-right: 100%;
+    
+
+}
+
 .albumportada img{
     height: 800px;
 }
@@ -363,6 +425,10 @@ p{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 /* DETALLES GENERO Jero*/
+*/
+
+
+/* DETALLES GENERO */
 
 .detailgenreportada img{
     height: 800px;
