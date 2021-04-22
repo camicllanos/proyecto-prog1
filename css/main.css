@@ -365,6 +365,49 @@ p{
 
 /* DETALLES ALBUMES */
 
+
+.albumes123{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    margin-left: 10px;
+    text-align: center; 
+}
+.aimg{
+    width: 20%;
+    background-color:black;
+    margin: 0,5%;
+    font-weight: 600;
+}
+.aimg img{
+    width: 200px;
+    height: 200px;
+}
+
+.albumes123 h2{
+    width: 100%;
+}
+
+.detallesintro{
+    width: 20%;
+    background-color:black;
+    margin: 0,5%;
+    font-weight: 600;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.detallesintro h2{
+    width: 100%;
+    margin-top: auto;
+    text-align: center;
+    margin-right: 100%;
+    
+
+}
+
+/*
 .albumportada img{
     height: 800px;
 }
@@ -399,6 +442,9 @@ p{
 .albumes123 div h2{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
+*/
+
+
 /* DETALLES GENERO */
 
 .detailgenreportada img{
