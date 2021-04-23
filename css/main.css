@@ -49,6 +49,7 @@ p{
 .container {
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 
 /* Hijo */
@@ -62,7 +63,12 @@ p{
 /* Fin Logo web */
 
 /* Menu */
-
+.fa-bars{
+    display: none;
+}
+.Menu{
+    display: block;
+}
 .menu-lista{
     display: flex;
     justify-content: space-around;
@@ -88,7 +94,6 @@ p{
 
 .container .buscador1{ 
     align-items: center;
-    padding-top: 30px;
 }
 
 /* Fin del Buscador */
@@ -231,13 +236,6 @@ h2 {
     font-size: 20px;
 }
 
-.telephone{
-    font-family:'Raleway', sans-serif;
-    font-size: 20px;
-    margin-top: 50px;
-    margin-left: 50px;
-}
-
 /* Listado numero 1 artist */
 
 .searchartist{
@@ -371,6 +369,18 @@ h2 {
     height: 200px;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
 /* FIN DETALLES ARTISTS */
 
 /* DETALLES ALBUMES */
@@ -404,7 +414,6 @@ h2 {
     font-weight: 600;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-left: 565px;
 }
 
 .detallesintro h2{
@@ -544,6 +553,16 @@ h2 {
 }
 
 /*  F I N   P A R T E    J E R O N I M O */
+@media (max-width: 1024px){
+    .Menu{
+        display: none;
+    }
+    .fa-bars{
+        display: block;
+    }
+}
+
+
 @media (max-width: 375px){
     .container{
         display: flex;
@@ -557,6 +576,8 @@ h2 {
         width: 100%
     }
     .menu-lista li{
+        width: 16.6%;
+
     }
         
 }
