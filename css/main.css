@@ -236,6 +236,12 @@ h2 {
     font-size: 20px;
 }
 
+.telephone{
+    margin-left: 50px;
+    margin-top: 50px;
+
+}
+
 /* Listado numero 1 artist */
 
 .searchartist{
@@ -384,7 +390,6 @@ h2 {
 .amigo, h2{
     text-align: left;
 }
-
 
 /* FIN DETALLES ARTISTS */
 
