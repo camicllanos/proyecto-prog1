@@ -236,6 +236,12 @@ h2 {
     font-size: 20px;
 }
 
+.telephone{
+    margin-left: 50px;
+    margin-top: 50px;
+
+}
+
 /* Listado numero 1 artist */
 
 .searchartist{
@@ -360,17 +366,30 @@ h2 {
     height: 800px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
+.todo2{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+    margin-left: 10px;
+    text-align: center; 
+}
+.epik  h2  h3{
+    width: 20%;
+    background-color:black;
+    margin: 0,5%;
+    font-weight: 600;
+    text-align: left;
+    width: 100%;
+}
+.epik img{
+    width: 200px;
+    height: 200px;
+    margin-top: 50px;
+}
+.amigo, h2{
+    text-align: left;
+}
 
 /* FIN DETALLES ARTISTS */
 
@@ -405,6 +424,7 @@ h2 {
     font-weight: 600;
     flex-direction: row;
     flex-wrap: wrap;
+    margin-left: 575px;
 }
 
 .detallesintro h2{
