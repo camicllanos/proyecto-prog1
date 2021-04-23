@@ -360,15 +360,25 @@ h2 {
     height: 800px;
 }
 
-
-
-
-
-
-
-
-
-
+.bruno{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+    margin-left: 10px;
+    text-align: center; 
+}
+.epik{
+    width: 20%;
+    background-color:black;
+    margin: 0,5%;
+    font-weight: 600;
+}
+.epik img{
+    width: 200px;
+    height: 200px;
+    margin-top: 50px;
+}
 
 
 
