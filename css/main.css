@@ -332,6 +332,7 @@ h2 {
     height: 800px;
 }
 
+
 .narnia{
     display: flex;
     flex-wrap: wrap;
@@ -357,16 +358,6 @@ h2 {
 
 .artistportada img{
     height: 800px;
-}
-.todo2{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
-}
-.kilo {
-    width: 200px;
-    height: 200px;
 }
 
 
