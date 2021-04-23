@@ -116,6 +116,11 @@ p{
 
 /* INDEX */
 
+.tituloindex{
+
+    margin-left: 50px;
+}
+
  /* Listas y elementos index.htm */
 
  /* Lista numero 1 Albums */ 
@@ -224,6 +229,12 @@ h2 {
 
 .searchportada img{
     height: 800px;
+}
+
+.titulosearch{
+
+margin-left: 575px;
+
 }
 
 .suggestions{
