@@ -405,6 +405,7 @@ h2 {
     font-weight: 600;
     flex-direction: row;
     flex-wrap: wrap;
+    margin-left: 575px;
 }
 
 .detallesintro h2{
