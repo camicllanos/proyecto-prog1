@@ -133,9 +133,9 @@ h2 {
 }
 
 .caja{
-    width: 20%;
+    width: 19%;
     background-color:black;
-    margin: 0,5%;
+    margin: 0.5%;
     font-weight: 600;
     
 }
@@ -554,7 +554,7 @@ h2 {
 }
 
 
-@media (max-width: 375px){
+@media (max-width: 550px){
     .container{
         display: flex;
         flex-wrap: wrap;
@@ -568,7 +568,21 @@ h2 {
     }
     .menu-lista li{
         width: 16.6%;
-
     }
-        
+    .imagenportada h1{
+        font-size: 30px;
+    }
+    .caja{
+        width: 40%;
+        margin: 5%;
+    }
+    .circulo{
+        width: 40%;
+        margin: 5%;
+    }
+    .triangulo{
+        width: 40%;
+        margin: 5%;
+    }
+    
 }
