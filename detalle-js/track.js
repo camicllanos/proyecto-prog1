@@ -5,7 +5,7 @@ fetch(urlTracks)
     })
     .then( function(data){
         console.log(data)
-         
+        let listabesttrack = document.querySelector(".listabesttrack");
     })
     .catch(function (error){
         console.log (error);
