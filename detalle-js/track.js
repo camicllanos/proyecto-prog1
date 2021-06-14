@@ -4,8 +4,15 @@ fetch(urlTracks)
         return response.json();
     })
     .then( function(data){
-        console.log(data)
-        let listabesttrack = document.querySelector(".listabesttrack");
+        //Aca va mi codigo//
+        
+        //capturamos los destinos//
+        let avatar = document.querySelector(".avatar")
+        let nombreCancion = document.querySelector (".nombrecancion");
+        let nombreArtista = document.querySelector (".nombreartsita");
+        let nombreDisco = document.querySelector (".nombredisco");
+
+        
     })
     .catch(function (error){
         console.log (error);
