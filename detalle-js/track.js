@@ -11,7 +11,7 @@ fetch(urlTracks)
         let nombreCancion = document.querySelector (".nombrecancion");
         let nombreArtista = document.querySelector (".nombreartsita");
         let nombreDisco = document.querySelector (".nombredisco");
-
+        console.log (data);
         
     })
     .catch(function (error){

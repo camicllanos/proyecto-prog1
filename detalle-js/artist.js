@@ -7,11 +7,7 @@ fetch(urlArtist)
         //Aca va mi codigo//
         
         //capturamos los destinos//
-        let  = document.querySelector(".")
-        let  = document.querySelector (".");
-        let  = document.querySelector (".");
-        let  = document.querySelector (".");
-
+       console.log (data);
         
     })
     .catch(function (error){
