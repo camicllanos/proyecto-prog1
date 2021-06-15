@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 
 const formBusqueda = document.getElementById("formBusqueda")
@@ -49,3 +50,13 @@ formBusqueda.addEventListener('submit', function (event) {
 })
 
 
+=======
+let buscador = document.querySelector(`.buscador1`);
+let mensaje = " ";
+
+if (buscador != null){
+    mensaje = "El campo esta vacio"
+} else if (buscador.length < 3){
+    mensaje = "Al menos 3 caracteres"
+} else if(buscador);
+>>>>>>> e4074b99bd9ddccd4fb2e84355a7ac1bfe39d497
