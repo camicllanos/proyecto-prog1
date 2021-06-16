@@ -33,8 +33,8 @@
             </div>
 
             <div class="buscador1">
-                <form action="search-results.html" method="GET">
-                    <input type="text" placeholder="Search" name="buscador" value="">
+                <form id="formBusqueda" action="" method="GET">
+                    <input id="inputBusqueda" type="text" placeholder="Search" name="buscador" value="">
                     <button type="submit">Search</button>
                 </form>
             </div>
@@ -46,6 +46,14 @@
     </header>
 
     <main>
+
+        <section>
+            <h2>Búsqueda</h2>
+            <ul id="resultadosBusqueda">
+
+            </ul>
+        </section>
+
         <section>
             <!--Listas desordenadas para armar los 3 listados con sus 5 elementos-->
             <h2 class="tituloindex">Albums</h2>
@@ -157,8 +165,13 @@
 
 
 
+<<<<<<< HEAD
+<script src="./js/search.js"></script>
+
+=======
 
     <script src="./js/index.js"></script>
+>>>>>>> e4074b99bd9ddccd4fb2e84355a7ac1bfe39d497
 </body>
 
 </html>
