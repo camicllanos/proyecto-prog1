@@ -38,3 +38,14 @@ formBusqueda.addEventListener('submit', function (event) {
 })
 
 
+<<<<<<< HEAD
+=======
+let buscador = document.querySelector(`.buscador1`);
+let mensaje = " ";
+
+if (buscador != null){
+    mensaje = "El campo esta vacio"
+} else if (buscador.length < 3){
+    mensaje = "Al menos 3 caracteres"
+} else if(buscador);
+>>>>>>> 5af23755eef0a57ef22b31a3419847880490b5bc

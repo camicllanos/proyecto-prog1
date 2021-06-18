@@ -5,17 +5,20 @@ fetch(urlTracks)
     })
     .then( function(data){
         //Aca va mi codigo//
-        let tracks = data.album[0];
+        let tracks = data.album;
         //capturamos los destinos//
 
-        let trackAvatar = document.querySelector(".avatar")
-        let nombreCancion = document.querySelector (".nombrecancion");
-        let nombreArtista = document.querySelector (".nombreartsita");
-        let nombreDisco = document.querySelector (".nombredisco");
+        let trackAvatar = document.querySelector(".trackAvatar");
+        let urlAvatar = data.album.cover_medium;
+        let nombreCancion = document.querySelector(".nombreCancion");
+        let nombreArtista = document.querySelector(".nombreArtista");
+        let nombreDisco = document.querySelector(".nombreDisco");
         console.log (data);
 
-        trackAvatar.src =  tracks.album.cover_medium; 
-        nombreCancion.innerHTML += tracks.title;
+        trackAvatar.src =  urlAvatar; 
+        nombreCancion.innerHTML += data.title;
+        nombreArtista.innerHTML += data.artist.name;
+        nombreDisco.innerHTML += data.album.title;
              
     })
     .catch(function (error){
