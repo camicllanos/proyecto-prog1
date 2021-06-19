@@ -1,4 +1,4 @@
-let urlArtist = "https://cors-anywhere.herokuapp.com/https://api.deezer.com/artist/27"
+let urlArtist = `https://cors-anywhere.herokuapp.com/https://api.deezer.com/artist/${id}/albums`
 fetch(urlArtist)
     .then(function(response){
         return response.json();
