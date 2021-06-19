@@ -38,8 +38,6 @@ formBusqueda.addEventListener('submit', function (event) {
 })
 
 
-<<<<<<< HEAD
-=======
 let buscador = document.querySelector(`.buscador1`);
 let mensaje = " ";
 
@@ -48,4 +46,32 @@ if (buscador != null){
 } else if (buscador.length < 3){
     mensaje = "Al menos 3 caracteres"
 } else if(buscador);
->>>>>>> 5af23755eef0a57ef22b31a3419847880490b5bc
+
+//TRACKS//
+let urlTracks = `https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart/0/tracks`
+
+fetch (urlTracks)
+    .then(function(response){
+        return response.json();
+    })
+    .then( function(data){
+        //Aca va mi codigo//
+        let arrayTracks = data.data;
+        let topTracks = document.querySelector(".listaBestTrack");
+        let info = "";
+        console.log(data);
+
+        for(let i=0; i<5; i++)
+            info += ` <article>
+            <a href="detail-track.html?id=${arrayTracks[i].id}">
+            <img class= "trackAvatar" src="${arrayTracks[i].album.cover_medium}" alt="Cancion">
+            <h3><a class="nombreArtista" href="detail-track.html?id=${arrayTracks[i].artist.id}">${arrayTracks[i].artist.name}</a></h3>
+            <h4><a href="detail-track.html?id=${arrayTracks[i].id}">${arrayTracks[i].title}</a></h4>
+            </article>`
+
+            topTracks.innerHTML += info; 
+        
+    })
+    .catch(function (error){
+        console.log (error);
+})
