@@ -41,5 +41,5 @@ for (let i = 0; i < favoritos.length; i++) {
                 <img src=${favoritos[i].imagen} alt="${favoritos[i].title}">
                 <p>${favoritos[i].title}</p>
             </li>
-    `
+            `
 }
