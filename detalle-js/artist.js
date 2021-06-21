@@ -9,17 +9,15 @@
     let id = queryStringObj.get('id');
     //DECLARO PRIMERAS VARIABLES
     let artista = document.querySelector(".listaArtist");
-    let albumes = document.querySelector("#albumes-artista");
+    let albumes = document.querySelector(".lista5Albums");
     //FETCH
     fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/artist/${id}`)
       .then(function (response) {
         console.log(response);
         return response.json()
       })
-      .then(function (datos) {
+      .then(function (data) {
         //DECLARO NUEVAS VARIABLES
-        let fotoArtist = data.picture_medium;
-        let nombreArtist = data.name;
         artista.innerHTML += `<img class="fotoArtist" src="${data.picture_medium}" alt="">
         <p class="nombreArtist">${data.name}</p>                               
         `
@@ -29,26 +27,23 @@
         console.log(error);
       })
     //SEGUNDO FETCH PARA BUSCAR ALBUMES POR ARTISTA
-    fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/artist/${busqueda}/albums`)
+    fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/artist/${id}/albums`)
       .then(function (response) {
         console.log(response);
         return response.json()
       })
-      .then(function (datos) {
-        console.log(datos);
+      .then(function (data) {
+        console.log(data);
         //PREPARO BUCLE
         for (let i = 0; i<5; i++) {
-          let albumTitulo = datos.data[i].title;
-          let albumFoto = datos.data[i].cover;
           albumes.innerHTML += `
-        <article class="track">
-        <a href="./playlist.html" class="corazon"></a>
-        <a href="./detail-album.html"><img src="${albumFoto}" alt="${albumTitulo}"></a>
+        <ul class=".lista5Albums">
+        <a href="./detail-album.html"><img src="${data.data[i].cover_medium}" alt="${data.data[i].title}"></a>
         <div>
-        <a href="detail-track.html"><h2>${albumTitulo}</h2></a>
+        <a href="detail-track.html"><h2>${data.data[i].title}</h2></a>
         </div>
         <a href="detail-track.html" class="punto"><i class="fas fa-ellipsis-h"></i></a>
-        </article>
+        </ul>
         `
         }
       })
