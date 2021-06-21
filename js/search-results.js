@@ -74,7 +74,7 @@ function llamarAPI(busqueda) {
 
                 if (respuesta.data.length > 0) {
 
-                    tituloBusquedas.innerHTML = `Resultados de búsqueda para ${busqueda}`
+                    tituloBusquedas.innerHTML = `Results for ${busqueda}`
 
                     // vacío el contenedor antes de agregar nuevas búsquedas
                     // para que no se acumulen
@@ -104,7 +104,7 @@ function llamarAPI(busqueda) {
 
                 } else {
                     contenedorBusquedas.innerHTML = ''
-                    tituloBusquedas.innerHTML = `No hay resultados para ${busqueda}`
+                    tituloBusquedas.innerHTML = `No Results ${busqueda}`
                 }
 
 
