@@ -11,6 +11,7 @@ if (busquedaEnLS) {
 
 
 // Header y Footer --> manejo del input de búsqueda
+
 let formBusqueda = document.getElementById("formBusqueda")
 let inputBusqueda = document.getElementById("inputBusqueda")
 
