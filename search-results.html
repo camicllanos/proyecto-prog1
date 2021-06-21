@@ -31,9 +31,9 @@
                     <li><a href="search-results.html">Search</a></li>
                 </ul>
             </div>
-            <div class="Buscador1">
-                <form action="search-results.html" method="GET">
-                    <input type="text" placeholder="Search" name="buscador" value="">
+            <div class="buscador1">
+                <form id="formBusqueda" action="" method="GET">
+                    <input id="inputBusqueda" type="text" placeholder="Search" name="buscador" value="">
                     <button type="submit">Search</button>
                 </form>
             </div>
@@ -45,14 +45,15 @@
         <img src="./img/searchportada.png" alt="The results of your search are displayed below">
     </div>
 
-    <div>
-        <h2 class="titulosearch">NO RESULTS</h2>
-        <ul class="suggestions">
-            <li class="try">Sorry, your search could not be found. Please try another keywords</li>
+    <section>
+        <h2 id="tituloResultado"></h2>
+        <ul id="resultadosBusqueda" class="searchartist">
+            
         </ul>
-    </div>
+    </section>
+
     <main>
-        <section>
+       <!-- <section>
             <h3 class="telephone">EXPLORE TITLES RELATED TO: TELEPHONE</h3>
             <h2 class="tituloindex">Artists</h2>
             <ul class="searchartist">
@@ -144,7 +145,7 @@
             </div>
 
         </section>
-    </main>
+    </main> --> 
 
     <footer>
         <!-- Footer con nombre de los integrantes del grupo + iconos redes sociales-->
@@ -162,7 +163,13 @@
         </div>
     </footer>
 
+    <!-- Loader Gif-->
+    
+    <div id="loader-container" style="display: none;">
+        <div class="loader"></div>
+    </div>
 
+    <script src="./js/search-results.js"></script>
 </body>
 
 </html>
