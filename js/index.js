@@ -67,7 +67,7 @@ function llamarIndexAPI() {
             for (let i = 0; i < albumsApi.length; i++) {
                 listaAlbums.innerHTML += `
                     <li class="caja album">
-                        <a href="detail-album.html"><i><img src=${albumsApi[i].cover_big} alt=${albumsApi[i].title}></i></a>
+                        <a href="detail-album.html?id=${albumsApi[i].id}"><i><img src=${albumsApi[i].cover_big} alt=${albumsApi[i].title}></i></a>
                         <p>${albumsApi[i].title}</p>
                     </li>
                     `
@@ -78,8 +78,8 @@ function llamarIndexAPI() {
             for (let i = 0; i < artistasApi.length; i++) {
                 listaArtistas.innerHTML += `
                     <li class="caja artista">
-                        <a href="detail-album.html"><i><img src=${artistasApi[i].cover_big} alt=${artistasApi[i].title}></i></a>
-                        <p>${artistasApi[i].title}</p>
+                        <a href="detail-artist.html?id=${artistasApi[i].id}"><i><img src=${artistasApi[i].picture_big} alt=${artistasApi[i].name}></i></a>
+                        <p>${artistasApi[i].name}</p>
                     </li>
                     `
             }
@@ -89,7 +89,7 @@ function llamarIndexAPI() {
             for (let i = 0; i < tracksApi.length; i++) {
                 listaTracks.innerHTML += `
                     <li class="caja cancion">
-                        <a href="detail-album.html"><i><img src=${tracksApi[i].cover_big} alt=${tracksApi[i].title}></i></a>
+                        <a href="detail-track.html?id=${tracksApi[i].id}"><i><img src=${tracksApi[i].album.cover_big} alt=${tracksApi[i].title}></i></a>
                         <p>${tracksApi[i].title}</p>
                         <button class="btn-favoritos">Agregar a favoritos</button>
                     </li>
@@ -143,7 +143,9 @@ function llamarIndexAPI() {
             // desactivar el loader
             loader.style.display = "none"
         })
-
+        .catch(function (error) {
+            console.log(error);
+        })
 }
 
 
