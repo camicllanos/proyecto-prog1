@@ -22,7 +22,7 @@ window.addEventListener("load", function () {
             <a href="./detail-track.html"><h1 class= "headtrack" id="h1track">${nombreTrack}<h1>
             <h3 class= "headtrack" id="h3track">${albumTrack}</h3>
            <a href="./detail-artist.html?id=${artist}"> <h4 class= "headtrack">${autorTrack}</h4></a>
-           <iframe title="deezer-widget" src="" width="100%" height="300" frameborder="0" allowtransparency="true" allow="encrypted-media; clipboard-write"></iframe>
+           <iframe title="deezer-widget" src="${linkTrack}" width="100%" height="300" frameborder="0" allowtransparency="true" allow="encrypted-media; clipboard-write"></iframe>
             </div>
             </div>
             </a>
@@ -33,7 +33,7 @@ window.addEventListener("load", function () {
         })
  //Defino array para guardar lista de favoritos
 let listaFavoritos= []
-//Recuperso datos del storage
+//Recupero datos del storage
 //set item agrega una propiedad y sus valores a obj literal
 //para ver si habia algo
 let recuperoStorage= localStorage.getItem('favoritos');
@@ -47,7 +47,7 @@ if (recuperoStorage != null){
 // Me fijo si el id de la canción esta en la lista
 //si esta cambio el texto para sacar
 //includes servia para ver si está o no
-if (listaFavoritos.includes(busqueda)){
+if (listaFavoritos.includes(id)){
 document.querySelector(".agregarFav").innerHTML=` <a class="divplayer" id="agregarFav"><button>Agregar a mi playlist</button><i class="fas fa-plus"></i></a>`
 }
 //Agregar a favs
@@ -55,9 +55,9 @@ let agregarAFav= document.querySelector('.agregarFav');
 agregarAFav.addEventListener('click', function(e){
     e.preventDefault();
     //si esta en la lista
-    if (listaFavoritos.includes(busqueda)){
+    if (listaFavoritos.includes(id)){
         //lo localizo en array INDEXOF-->LOCALIZAR
-        let sacarID= listaFavoritos.indexOf(busqueda);
+        let sacarID= listaFavoritos.indexOf(id);
         //y lo saco SPLICE-->SACAR
         listaFavoritos.splice(sacarID, 1);
         //Si ya lo saque --> cambio el texto de link
@@ -68,7 +68,7 @@ agregarAFav.addEventListener('click', function(e){
     //si no esta en mi lista
    else {
         //se agrega la canción actual
-        listaFavoritos.push(busqueda);
+        listaFavoritos.push(id);
         //si ya lo agregué-->cambio texto
         document.querySelector(".agregarFav").innerHTML=`
         <a class="divplayer" id="agregarFav"><button>Quitar de mi Playlist</button><i class="fas fa-plus"></i></a>`;
