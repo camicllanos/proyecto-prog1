@@ -27,35 +27,41 @@ formBusqueda.addEventListener('submit', function (event) {
 let query = location.search;
 let queryObject = new URLSearchParams(query);
 let id = queryObject.get("id");
+// id=238277122
 let urlAlbum1 = `https://cors-anywhere.herokuapp.com/https://api.deezer.com/album/${id}`;
 // detalle album
-
 fetch(urlAlbum1)
     .then(function(response){
         return response.json();
     }).then(function(data){     
        //Aca muestro código
-       console.log(data);
+     // console.log(data.cover_medium);
          let contenidoDetalle = document.querySelector(".listaAlbum")
-         let informacionAlbum = ""
-         informacionAlbum.innnerHTML = `<article>
+         let arrayGeneros = data.genres.data
+         console.log(arrayGeneros)
+        let informacionAlbum = ""
+        contenidoDetalle.innerHTML += `<article>
          <img class="fotoAlbum" src="${data.cover_medium}" alt="">
          <p class="nombreDiscoA">${data.title}</p>
          <p class="nombreArtistaA">${data.artist.name}</p>
-         <p class="nombreGenero">${datos.genres.data[0].name}</p>
+         <p class="nombreGenero"><a href="detail-genres.html?id=${arrayGeneros[0].id}">${arrayGeneros[0].name}</a></p>
          <p class="fechaPublicacion">${data.release_date}</p>
      </article>`
+
+    // contenidoDetalle.innerHTML += informacionAlbum
 
         }).catch(function(error){
         console.log(error);
     })
+/*   
 let urlAlbum2 = `https://cors-anywhere.herokuapp.com/https://api.deezer.com/track/${id}`
+ 
 fetch(urlAlbum2)
     .then( function(response){
         return response.json();
     })
     .then(function(data){
-        console.log(data)
+       // console.log(data)
          let album = data.track;
          let contenidoDetalle2 = document.querySelector(".listaAlbum");
          let informacionAlbum2 = ""
@@ -71,5 +77,5 @@ fetch(urlAlbum2)
             console.log(error);
 
     })
-
+*/
     

@@ -41,8 +41,8 @@ llamarIndexAPI()
 
 function llamarIndexAPI() {
     // activar el loader
-    let loader = document.getElementById('loader-container')
-    loader.style.display = "flex"
+    // let loader = document.getElementById('loader-container')
+    // loader.style.display = "flex"
     let proxy = `https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart/`
 
     fetch(proxy)

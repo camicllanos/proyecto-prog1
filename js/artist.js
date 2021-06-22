@@ -31,7 +31,7 @@ formBusqueda.addEventListener('submit', function (event) {
 //     console.log(location.search);
     //QUERYSTRING
     let queryString = location.search;
-    let queryStringObj = new URLSearchParams(queryString);//modelo de obj en js
+    let queryStringObj = new URLSearchParams(queryString);//de obj en js
     let id = queryStringObj.get('id');
     //DECLARO PRIMERAS VARIABLES
     let artista = document.querySelector(".listaArtist");
@@ -68,9 +68,7 @@ formBusqueda.addEventListener('submit', function (event) {
         <div>
         <a href="detail-track.html"><h2>${data.data[i].title}</h2></a>
         </div>
-        <a href="detail-track.html" class="punto"><i class="fas fa-ellipsis-h"></i></a>
-        </ul>
-        `
+         `
         }
       })
       .catch(function (error) {

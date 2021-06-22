@@ -24,11 +24,13 @@ formBusqueda.addEventListener('submit', function (event) {
 
 // Fin Header y Footer
 
-window.addEventListener("load", function () {
-    console.log(window.location.search);
+// window.addEventListener("load", function () {
+//     console.log(window.location.search);
     let queryString = location.search;
     let queryStringObj = new URLSearchParams(queryString)
     let id = queryStringObj.get('id');
+    // console.log(id)
+    //dato en la home, creo qs en la home. 
     let track = document.querySelector(".listaBestTrack")
     fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/track/${id}`)
         .then(function (response) {
@@ -37,6 +39,7 @@ window.addEventListener("load", function () {
         })
         .then(function (datos) {
             console.log(datos)
+            let track = document.querySelector ("#listaBestTrack")
             let nombreTrack = datos.title
             let autorTrack = datos.artist.name
             let imagenTrack = datos.artist.picture_medium
@@ -48,7 +51,7 @@ window.addEventListener("load", function () {
             <a href="./detail-track.html"><h1 class= "headtrack" id="h1track">${nombreTrack}<h1>
             <h3 class= "headtrack" id="h3track">${albumTrack}</h3>
            <a href="./detail-artist.html?id=${artist}"> <h4 class= "headtrack">${autorTrack}</h4></a>
-           <iframe title="deezer-widget" src="${linkTrack}" width="100%" height="300" frameborder="0" allowtransparency="true" allow="encrypted-media; clipboard-write"></iframe>
+           <iframe title="deezer-widget" src="https://widget.deezer.com/widget/dark/track/${id}" width="100%" height="300" frameborder="0" allowtransparency="true" allow="encrypted-media; clipboard-write"></iframe>
             </div>
             </div>
             </a>
@@ -57,4 +60,4 @@ window.addEventListener("load", function () {
         .catch(function (error) {
             console.log(error)
         })
-});
+// });
