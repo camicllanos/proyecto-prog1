@@ -1,14 +1,13 @@
 
-// revisar el localStorage para obtener búsqueda de otra página
+let query = location.search
+let queryStringObj = new URLSearchParams(query)
+let busqueda = queryStringObj.get('search')
 
-let busquedaEnLS = localStorage.getItem('searchAPI')
 // si hay algo en LS, hago el llamado a la api para mostrar resultados
-if (busquedaEnLS) {
-    llamarAPI(busquedaEnLS)
+if (busqueda!== null) {
+    llamarAPI(busqueda)
   
 }
-
-
 
 // Header y Footer --> manejo del input de búsqueda
 
@@ -24,8 +23,7 @@ formBusqueda.addEventListener('submit', function (event) {
         alert("Ingreso inválido")
     } else {
         llamarAPI(busqueda)
-        // guardar la búsqueda en localStorage
-        localStorage.setItem('searchAPI', busqueda)
+        
     }
   
 })
@@ -65,17 +63,6 @@ function llamarAPI(busqueda) {
                                 <p>${respuesta.data[i].title}</p>
                             </li>
                         `
-                    }
-
-
-                    let canciones = document.querySelectorAll('.cancion')
-
-                    for (let i = 0; i < canciones.length; i++) {
-                        canciones[i].addEventListener('click', function() {
-                            
-                            let cancion = canciones[i].children[1].innerText
-                            localStorage.setItem('cancionAPI', cancion)
-                        })
                     }
 
 

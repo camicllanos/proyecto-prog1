@@ -13,11 +13,9 @@ formBusqueda.addEventListener('submit', function (event) {
         alert("Ingreso inválido")
     } else {
 
-        // guardar la búsqueda en localStorage
-        localStorage.setItem('searchAPI', busqueda)
+       // redirecciona a la página de search mediante query string 
+       window.location.replace(`./search-results.html?search=${busqueda}`)
 
-        // redirecciona a la página de search
-        window.location.replace('./search-results.html')
     }
 
 })
