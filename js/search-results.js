@@ -61,7 +61,7 @@ function llamarAPI(busqueda) {
                     for (let i = 0; i < 10; i++) {                       
                         contenedorBusquedas.innerHTML += `
                             <li class="caja cancion">
-                                <a href="detail-track.html"><i><img src=${respuesta.data[i].album.cover_big} alt=${respuesta.data[i].title}></i></a>
+                                <a href="detail-track.html?id=${respuesta.data[i].id}"><i><img src=${respuesta.data[i].album.cover_big} alt=${respuesta.data[i].title}></i></a>
                                 <p>${respuesta.data[i].title}</p>
                             </li>
                         `

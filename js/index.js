@@ -96,36 +96,6 @@ function llamarIndexAPI() {
                     `
             }
 
-
-            // seleccionamos todos los LI y les asignamos evento para redireccionarse a la pág correspondiente
-            // manda el título del elemento al localStorage para cargarlo en otra página.
-            let albums = document.querySelectorAll('.album')
-
-            for (let i = 0; i < albums.length; i++) {
-                albums[i].addEventListener('click', function () {
-                    let titulo = albums[i].children[1].innerText
-                    localStorage.setItem('albumAPI', titulo)
-                })
-            }
-
-            let artistas = document.querySelectorAll('.artista')
-
-            for (let i = 0; i < artistas.length; i++) {
-                artistas[i].addEventListener('click', function () {
-                    let artista = artistas[i].children[1].innerText
-                    localStorage.setItem('artistaAPI', artista)
-                })
-            }
-
-            let canciones = document.querySelectorAll('.cancion')
-
-            for (let i = 0; i < canciones.length; i++) {
-                canciones[i].addEventListener('click', function () {
-                    let cancion = canciones[i].children[1].innerText
-                    localStorage.setItem('cancionAPI', cancion)
-                })
-            }
-
             // asignar evento a botones de favoritos
 
             let botonesFavoritos = document.querySelectorAll('.btn-favoritos')
