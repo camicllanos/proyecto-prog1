@@ -44,7 +44,7 @@ formBusqueda.addEventListener('submit', function (event) {
             let autorTrack = datos.artist.name
             let imagenTrack = datos.artist.picture_medium
             let albumTrack = datos.album.title
-            let linkTrack = datos.preview
+            // let linkTrack = datos.preview
             let artist= datos.artist.id
             track.innerHTML +=
             `<a href="./detail-track.html"><div class= "divtrack"><div class= "divtrackhijo"><img class= "imgtrack" src="${imagenTrack}" alt="${nombreTrack}"></a>

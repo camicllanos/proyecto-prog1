@@ -35,7 +35,7 @@ fetch(urlAlbum1)
         return response.json();
     }).then(function(data){     
        //Aca muestro código
-     // console.log(data.cover_medium);
+     console.log(data);
          let contenidoDetalle = document.querySelector(".listaAlbum")
          let arrayGeneros = data.genres.data
          console.log(arrayGeneros)
@@ -47,35 +47,23 @@ fetch(urlAlbum1)
          <p class="nombreGenero"><a href="detail-genres.html?id=${arrayGeneros[0].id}">${arrayGeneros[0].name}</a></p>
          <p class="fechaPublicacion">${data.release_date}</p>
      </article>`
-
+        let album = data.tracks.data;
+        let listaCanciones = document.querySelector(".listaAlbum");
+        let informacionCancion = ""
+            for(let i=0; i<album.length; i++){
+             informacionCancion += `
+                <li> ${album[i].title}</li>
+                 `
+                
+        }
+        
+        console.log(album)
+     listaCanciones.innerHTML += informacionCancion
     // contenidoDetalle.innerHTML += informacionAlbum
 
         }).catch(function(error){
         console.log(error);
     })
-/*   
-let urlAlbum2 = `https://cors-anywhere.herokuapp.com/https://api.deezer.com/track/${id}`
- 
-fetch(urlAlbum2)
-    .then( function(response){
-        return response.json();
-    })
-    .then(function(data){
-       // console.log(data)
-         let album = data.track;
-         let contenidoDetalle2 = document.querySelector(".listaAlbum");
-         let informacionAlbum2 = ""
-         console.log(data)
-         for(let i=0; i<album.length; i++){
-             informacionAlbum2.innerHTML += `<ul>
-             <li> ${data[i].data.title}</li>
-             </ul>
-             `
-         }
-         contenidoDetalle2.innerHTML += informacionAlbum2
-        }).catch(function(error){
-            console.log(error);
+  
 
-    })
-*/
     

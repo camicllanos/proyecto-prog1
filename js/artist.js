@@ -61,12 +61,12 @@ formBusqueda.addEventListener('submit', function (event) {
       .then(function (data) {
         console.log(data);
         //PREPARO BUCLE
+
         for (let i = 0; i<5; i++) {
           albumes.innerHTML += `
         <ul class=".lista5Albums">
-        <a href="./detail-album.html"><img src="${data.data[i].cover_medium}" alt="${data.data[i].title}"></a>
+        <a href="./detail-album.html?id=${data.data[i].id}"><img src="${data.data[i].cover_medium}" alt="${data.data[i].title}"></a>
         <div>
-        <a href="detail-track.html"><h2>${data.data[i].title}</h2></a>
         </div>
          `
         }
@@ -74,3 +74,5 @@ formBusqueda.addEventListener('submit', function (event) {
       .catch(function (error) {
         console.log(error);
   })
+  // <a href="detail-track.html?id=${}"><h2>${data.data[i].title}</h2></a>
+  //       </div>
