@@ -22,16 +22,12 @@ formBusqueda.addEventListener('submit', function (event) {
 
 // Fin Header y Footer
 
-// CARGAR PAGINA ANTES DE TODO
-// window.addEventListener("load", function () {
-//     console.log(window);
-//     console.log(location);
-//     console.log(location.search);
+//Detalle Artista//
     //QUERYSTRING
     let queryString = location.search;
     let queryStringObj = new URLSearchParams(queryString);//de obj en js
     let id = queryStringObj.get('id');
-    //DECLARO PRIMERAS VARIABLES
+    //DECLARO VARIABLES
     let artista = document.querySelector(".listaArtist");
     let albumes = document.querySelector(".lista5Albums");
     //FETCH
@@ -41,16 +37,14 @@ formBusqueda.addEventListener('submit', function (event) {
         return response.json()
       })
       .then(function (data) {
-        //DECLARO NUEVAS VARIABLES
         artista.innerHTML += `<img class="fotoArtist" src="${data.picture_medium}" alt="">
-        <p class="nombreArtist">${data.name}</p>                               
-        `
-      }
-      )
+          <p class="nombreArtist">${data.name}</p>                               
+          `
+      })
       .catch(function (error) {
         console.log(error);
       })
-    //SEGUNDO FETCH PARA BUSCAR ALBUMES POR ARTISTA
+    //SEGUNDO FETCH PARA BUSCAR ALBUMS POR ARTISTA
     fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/artist/${id}/albums`)
       .then(function (response) {
         console.log(response);
@@ -59,18 +53,14 @@ formBusqueda.addEventListener('submit', function (event) {
       .then(function (data) {
         console.log(data);
         //PREPARO BUCLE
-
         for (let i = 0; i<5; i++) {
           albumes.innerHTML += `
-        <ul class=".lista5Albums">
-        <a href="./detail-album.html?id=${data.data[i].id}"><img src="${data.data[i].cover_medium}" alt="${data.data[i].title}"></a>
-        <div>
-        </div>
-         `
+            <ul class=".lista5Albums">
+            <a href="./detail-album.html?id=${data.data[i].id}"><img src="${data.data[i].cover_medium}" alt="${data.data[i].title}"></a>
+            `
         }
       })
       .catch(function (error) {
         console.log(error);
   })
-  // <a href="detail-track.html?id=${}"><h2>${data.data[i].title}</h2></a>
-  //       </div>
+ 

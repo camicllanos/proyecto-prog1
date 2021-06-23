@@ -22,12 +22,12 @@ formBusqueda.addEventListener('submit', function (event) {
 
 // Fin Header y Footer
 
+//Detalle Album//
 let query = location.search;
 let queryObject = new URLSearchParams(query);
 let id = queryObject.get("id");
-// id=238277122
 let urlAlbum1 = `https://cors-anywhere.herokuapp.com/https://api.deezer.com/album/${id}`;
-// detalle album
+
 fetch(urlAlbum1)
     .then(function(response){
         return response.json();
@@ -37,14 +37,14 @@ fetch(urlAlbum1)
          let contenidoDetalle = document.querySelector(".listaAlbum")
          let arrayGeneros = data.genres.data
          console.log(arrayGeneros)
-        let informacionAlbum = ""
+         let informacionAlbum = ""
         contenidoDetalle.innerHTML += `<article>
-         <img class="fotoAlbum" src="${data.cover_medium}" alt="">
-         <p class="nombreDiscoA">${data.title}</p>
-         <p class="nombreArtistaA">${data.artist.name}</p>
-         <p class="nombreGenero"><a href="detail-genres.html?id=${arrayGeneros[0].id}">${arrayGeneros[0].name}</a></p>
-         <p class="fechaPublicacion">${data.release_date}</p>
-     </article>`
+                <img class="fotoAlbum" src="${data.cover_medium}" alt="">
+                <p class="nombreDiscoA">${data.title}</p>
+                <p class="nombreArtistaA">${data.artist.name}</p>
+                <p class="nombreGenero"><a href="detail-genres.html?id=${arrayGeneros[0].id}">${arrayGeneros[0].name}</a></p>
+                <p class="fechaPublicacion">${data.release_date}</p>
+            </article>`
         let album = data.tracks.data;
         let listaCanciones = document.querySelector(".listaAlbum");
         let informacionCancion = ""
@@ -52,14 +52,11 @@ fetch(urlAlbum1)
              informacionCancion += `
                 <li> ${album[i].title}</li>
                  `
-                
         }
-        
-        console.log(album)
-     listaCanciones.innerHTML += informacionCancion
-    // contenidoDetalle.innerHTML += informacionAlbum
-
-        }).catch(function(error){
+        // console.log(album)
+        listaCanciones.innerHTML += informacionCancion
+        })
+        .catch(function(error){
         console.log(error);
     })
   

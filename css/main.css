@@ -351,8 +351,10 @@ margin-left: 575px;
 
 .titulotrack{
 
-    margin-left: 500px;
+    text-align: center;
+    
 }
+
 
 .narnia{
     display: flex;
@@ -424,11 +426,17 @@ margin-left: 575px;
     margin: 0,5%;
     
 }
+.nombreDiscoA{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: xx-large;
+}
 .aimg img{
     width: 200px;
     height: 200px;
 }
-
+.top5albums{
+    text-align: center;
+}
 .albumes123 h2{
     width: 100%;
 }
