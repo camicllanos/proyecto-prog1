@@ -44,16 +44,14 @@ fetch(urlAlbum1)
                 <p class="nombreArtistaA">${data.artist.name}</p>
                 <p class="nombreGenero"><a href="detail-genres.html?id=${arrayGeneros[0].id}">${arrayGeneros[0].name}</a></p>
                 <p class="fechaPublicacion">${data.release_date}</p>
-            </article>`
+             </article>`
         let album = data.tracks.data;
         let listaCanciones = document.querySelector(".listaAlbum");
         let informacionCancion = ""
             for(let i=0; i<album.length; i++){
              informacionCancion += `
-                <li> ${album[i].title}</li>
-                 `
+                <li><a href="./detail-track.html?id=${album[i].id}"> ${album[i].title}<a></li>         `
         }
-        // console.log(album)
         listaCanciones.innerHTML += informacionCancion
         })
         .catch(function(error){

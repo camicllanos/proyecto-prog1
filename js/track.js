@@ -43,8 +43,8 @@ formBusqueda.addEventListener('submit', function (event) {
             let albumTrack = datos.album.title
             let artist= datos.artist.id
             track.innerHTML +=
-                `<a href="./detail-track.html"><div class= "divtrack"><div class= "divtrackhijo"><img class= "imgtrack" src="${imagenTrack}" alt="${nombreTrack}"></a>
-                <a href="./detail-track.html"><h1 class= "headtrack" id="h1track">${nombreTrack}<h1>
+                `<div class= "divtrack"><div class= "divtrackhijo"><img class= "imgtrack" src="${imagenTrack}" alt="${nombreTrack}">
+                <h1 class= "headtrack" id="h1track">${nombreTrack}<h1>
                 <h3 class= "headtrack" id="h3track">${albumTrack}</h3>
                 <a href="./detail-artist.html?id=${artist}"> <h4 class= "headtrack">${autorTrack}</h4></a>
                 <iframe title="deezer-widget" src="https://widget.deezer.com/widget/dark/track/${id}" width="100%" height="300" frameborder="0" allowtransparency="true" allow="encrypted-media; clipboard-write"></iframe>

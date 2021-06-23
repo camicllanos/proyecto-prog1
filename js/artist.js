@@ -56,7 +56,7 @@ formBusqueda.addEventListener('submit', function (event) {
         for (let i = 0; i<5; i++) {
           albumes.innerHTML += `
             <ul class=".lista5Albums">
-            <a href="./detail-album.html?id=${data.data[i].id}"><img src="${data.data[i].cover_medium}" alt="${data.data[i].title}"></a>
+            <a href="./detail-album.html?id=${data.data[i].id}"><img src="${data.data[i].cover_medium}"><p class="nombreAlbum">${data.data[i].title}"</p></a>
             `
         }
       })
