@@ -32,30 +32,29 @@ fetch(urlAlbum1)
     .then(function(response){
         return response.json();
     }).then(function(data){     
-       //Aca muestro código
-     console.log(data);
+        //Aca muestro código
+        //  console.log(data);
          let contenidoDetalle = document.querySelector(".listaAlbum")
          let arrayGeneros = data.genres.data
-         console.log(arrayGeneros)
-         let informacionAlbum = ""
-        contenidoDetalle.innerHTML += `<article>
-                <img class="fotoAlbum" src="${data.cover_medium}" alt="">
+        //  console.log(arrayGeneros)
+         contenidoDetalle.innerHTML += `<article>
+                <img class="fotoAlbum" src="${data.cover_medium}" alt=""> 
                 <p class="nombreDiscoA">${data.title}</p>
                 <p class="nombreArtistaA">${data.artist.name}</p>
                 <p class="nombreGenero"><a href="detail-genres.html?id=${arrayGeneros[0].id}">${arrayGeneros[0].name}</a></p>
                 <p class="fechaPublicacion">${data.release_date}</p>
              </article>`
-        let album = data.tracks.data;
-        let listaCanciones = document.querySelector(".listaAlbum");
-        let informacionCancion = ""
+         let album = data.tracks.data;
+         let listaCanciones = document.querySelector(".listaAlbum");
+         let informacionCancion = ""
             for(let i=0; i<album.length; i++){
              informacionCancion += `
                 <li><a href="./detail-track.html?id=${album[i].id}"> ${album[i].title}<a></li>         `
-        }
-        listaCanciones.innerHTML += informacionCancion
+            }
+         listaCanciones.innerHTML += informacionCancion
         })
-        .catch(function(error){
-        console.log(error);
+    .catch(function(error){
+     console.log(error);
     })
   
 
