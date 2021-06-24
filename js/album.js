@@ -33,7 +33,7 @@ fetch(urlAlbum1)
         return response.json();
     }).then(function(data){     
         //Aca muestro código
-        //  console.log(data);
+         console.log(data);
          let contenidoDetalle = document.querySelector(".listaAlbum")
          let arrayGeneros = data.genres.data
         //  console.log(arrayGeneros)

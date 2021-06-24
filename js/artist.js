@@ -37,6 +37,7 @@ formBusqueda.addEventListener('submit', function (event) {
         return response.json()
       })
       .then(function (data) {
+        console.log(data)
         artista.innerHTML += `<img class="fotoArtist" src="${data.picture_medium}" alt="">
           <p class="nombreArtist">${data.name}</p>                               
           `
