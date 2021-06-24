@@ -17,7 +17,7 @@ formBusqueda.addEventListener('submit', function (event) {
 
 
         // redirecciona a la página de search mediante query string 
-        window.location.replace(`./search-results.html?search=${busqueda}`)
+        window.location = `./search-results.html?search=${busqueda}`
 
     }
 
