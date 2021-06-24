@@ -10,7 +10,7 @@ formBusqueda.addEventListener('submit', function (event) {
 
     event.preventDefault()
     let busqueda = inputBusqueda.value.trim()
-    //                 operador OR
+    //                 operador O R
     if (busqueda.length < 3 || busqueda === '') {
         alert("Ingreso inválido")
     } else {
@@ -40,16 +40,13 @@ if (favEnLS) {
 llamarIndexAPI()
 
 function llamarIndexAPI() {
-    // activar el loader
-    // let loader = document.getElementById('loader-container')
-    // loader.style.display = "flex"
-    let proxy = `https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart/`
 
-    fetch(proxy)
+    let url = `https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart/`
+
+    fetch(url)
         .then(function (response) { return response.json() })
         .then(function (respuesta) {
             // acá escribo todo lo que quiero hacer con la respuesta
-            console.log(respuesta)
 
             // desestructuro la respuesta en distintos arreglos
             let albumsApi = respuesta.albums.data
@@ -63,34 +60,35 @@ function llamarIndexAPI() {
             let listaTracks = document.querySelector('#lista-tracks')
 
             // for para crear la lista de Albums
-            listaAlbums.innerHTML = ''
+
             for (let i = 0; i < albumsApi.length; i++) {
                 listaAlbums.innerHTML += `
                     <li class="caja album">
-                        <a href="detail-album.html?id=${albumsApi[i].id}"><i><img src=${albumsApi[i].cover_big} alt=${albumsApi[i].title}></i></a>
+                        <a href="detail-album.html?id=${albumsApi[i].id}"><img src=${albumsApi[i].cover_big} alt=${albumsApi[i].title}></a>
                         <p>${albumsApi[i].title}</p>
                     </li>
                     `
             }
 
             // for para crear la lista de Artistas
-            listaArtistas.innerHTML = ''
+
             for (let i = 0; i < artistasApi.length; i++) {
                 listaArtistas.innerHTML += `
                     <li class="caja artista">
-                        <a href="detail-artist.html?id=${artistasApi[i].id}"><i><img src=${artistasApi[i].picture_big} alt=${artistasApi[i].name}></i></a>
+                        <a href="detail-artist.html?id=${artistasApi[i].id}"><img src=${artistasApi[i].picture_big} alt=${artistasApi[i].name}></a>
                         <p>${artistasApi[i].name}</p>
                     </li>
                     `
             }
 
             // for para crear la lista de Canciones
-            listaTracks.innerHTML = ''
+
             for (let i = 0; i < tracksApi.length; i++) {
                 listaTracks.innerHTML += `
-                    <li class="caja cancion">
-                        <a href="detail-track.html?id=${tracksApi[i].id}"><i><img src=${tracksApi[i].album.cover_big} alt=${tracksApi[i].title}></i></a>
+                    <li class="caja cancion" id="${tracksApi[i].id}">
+                        <a href="detail-track.html?id=${tracksApi[i].id}"><img src=${tracksApi[i].album.cover_big} alt=${tracksApi[i].title}></a>
                         <p>${tracksApi[i].title}</p>
+                        <p>${tracksApi[i].artist.name}</p>
                         <button class="btn-favoritos">Agregar a favoritos</button>
                     </li>
                     `
@@ -102,16 +100,23 @@ function llamarIndexAPI() {
             // rescata img y titulo y guarda en local storage
             for (let i = 0; i < botonesFavoritos.length; i++) {
                 botonesFavoritos[i].addEventListener('click', function (event) {
-                    let img = event.target.parentElement.children[0].src
+                    let img = event.target.parentElement.children[0].children[0].src
                     let titulo = event.target.parentElement.children[1].innerText
+                    let artist = event.target.parentElement.children[2].innerText
+                    let id = event.target.parentElement.id
 
-                    favoritos.push({ imagen: img, title: titulo })
+                    favoritos.push({
+                        id: id,
+                        imagen: img,
+                        title: titulo,
+                        artist: artist
+                    }
+                    )
 
                     localStorage.setItem('favoritos', JSON.stringify(favoritos))
                 })
             }
-            // desactivar el loader
-            loader.style.display = "none"
+
         })
         .catch(function (error) {
             console.log(error);

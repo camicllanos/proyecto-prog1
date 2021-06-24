@@ -13,33 +13,32 @@ formBusqueda.addEventListener('submit', function (event) {
         alert("Ingreso inválido")
     } else {
 
-
         // redirecciona a la página de search mediante query string 
         window.location.replace(`./search-results.html?search=${busqueda}`)
 
     }
-
-
 })
 
 // Fin Header y Footer
 
 
-
 // get favoritos del LocalStorage 
 
-let favoritos = JSON.parse( localStorage.getItem('favoritos') ) 
+let favoritos = JSON.parse(localStorage.getItem('favoritos'))
 
 console.log(favoritos)
 
 let listaFav = document.querySelector('#lista-favoritos')
 
+//Vacio la lista por las dudas. 
 listaFav.innerHTML = ''
 for (let i = 0; i < favoritos.length; i++) {
     listaFav.innerHTML += `
+
             <li class="corazon">
-                <img src=${favoritos[i].imagen} alt="${favoritos[i].title}">
+                <a href="./detail-track.html?id=${favoritos[i].id}"><img src=${favoritos[i].imagen} alt="${favoritos[i].title}"></a>
                 <p>${favoritos[i].title}</p>
+                <p>${favoritos[i].artist}</p>
             </li>
             `
 }
