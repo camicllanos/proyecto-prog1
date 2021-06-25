@@ -78,5 +78,8 @@ function llamarAPI(busqueda) {
         })
         .catch(function (error) {
             console.log(error);
+
+            // desactivar el loader
+            loader.style.display = "none"
         })
 }
