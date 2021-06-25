@@ -14,7 +14,7 @@ formBusqueda.addEventListener('submit', function (event) {
     } else {
 
         // redirecciona a la página de search mediante query string 
-        window.location = `./search-results.html?search=${busqueda}`
+        window.location = (`./search-results.html?search=${busqueda}`)
 
     }
 })
@@ -23,6 +23,7 @@ formBusqueda.addEventListener('submit', function (event) {
 
 
 // get favoritos del LocalStorage 
+
 
 let favoritos = JSON.parse(localStorage.getItem('favoritos'))
 
