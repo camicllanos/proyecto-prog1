@@ -11,7 +11,7 @@ formBusqueda.addEventListener('submit', function (event) {
     event.preventDefault()
     let busqueda = inputBusqueda.value.trim()
     //                 operador O R
-    if (busqueda.length < 3 || busqueda === '') {
+    if (busqueda < 3 || busqueda === '') {
         alert("Ingreso inválido")
     } else {
 
