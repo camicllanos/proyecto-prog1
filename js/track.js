@@ -52,4 +52,3 @@ formBusqueda.addEventListener('submit', function (event) {
         .catch(function (error) {
             console.log(error);
         })
-
