@@ -34,8 +34,8 @@ fetch(urlAlbum1)
     }).then(function(data){     
         //Aca muestro código
          console.log(data);
-         let contenidoDetalle = document.querySelector(".listaAlbum")
-         let arrayGeneros = data.genres.data
+         let contenidoDetalle = document.querySelector(".listaAlbum");
+         let arrayGeneros = data.genres.data;
         //  console.log(arrayGeneros)
          contenidoDetalle.innerHTML += `<article>
                 <img class="fotoAlbum" src="${data.cover_medium}" alt=""> 

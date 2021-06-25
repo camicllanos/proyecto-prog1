@@ -25,23 +25,22 @@ formBusqueda.addEventListener('submit', function (event) {
 
 //Detalle Tracks//
     let queryString = location.search;
-    let queryStringObj = new URLSearchParams(queryString)
+    let queryStringObj = new URLSearchParams(queryString);
     let id = queryStringObj.get('id'); 
-    let track = document.querySelector(".listaBestTrack")
 
     fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/track/${id}`)
         .then(function (response) {
-            console.log(response)
-            return response.json()
+            console.log(response);
+            return response.json();
         })
         .then(function (datos) {
-            console.log(datos)
-            let track = document.querySelector ("#listaBestTrack")
-            let nombreTrack = datos.title
-            let autorTrack = datos.artist.name
-            let imagenTrack = datos.artist.picture_medium
-            let albumTrack = datos.album.title
-            let artist= datos.artist.id
+            console.log(datos);
+            let track = document.querySelector ("#listaBestTrack");
+            let nombreTrack = datos.title;
+            let autorTrack = datos.artist.name;
+            let imagenTrack = datos.artist.picture_medium;
+            let albumTrack = datos.album.title;
+            let artist= datos.artist.id;
             track.innerHTML +=
                 `<div class= "divtrack"><div class= "divtrackhijo"><img class= "imgtrack" src="${imagenTrack}">
                 <h1 class= "headtrack">${nombreTrack}<h1>
@@ -51,6 +50,6 @@ formBusqueda.addEventListener('submit', function (event) {
                 `
         })
         .catch(function (error) {
-            console.log(error)
+            console.log(error);
         })
 
