@@ -89,32 +89,8 @@ function llamarIndexAPI() {
                         <a href="detail-track.html?id=${tracksApi[i].id}"><img src=${tracksApi[i].album.cover_big} alt=${tracksApi[i].title}></a>
                         <p>${tracksApi[i].title}</p>
                         <p>${tracksApi[i].artist.name}</p>
-                        <button class="btn-favoritos">Agregar a favoritos</button>
                     </li>
                     `
-            }
-
-            // asignar evento a botones de favoritos
-
-            let botonesFavoritos = document.querySelectorAll('.btn-favoritos')
-            // rescata img y titulo y guarda en local storage
-            for (let i = 0; i < botonesFavoritos.length; i++) {
-                botonesFavoritos[i].addEventListener('click', function (event) {
-                    let img = event.target.parentElement.children[0].children[0].src
-                    let titulo = event.target.parentElement.children[1].innerText
-                    let artist = event.target.parentElement.children[2].innerText
-                    let id = event.target.parentElement.id
-
-                    favoritos.push({
-                        id: id,
-                        imagen: img,
-                        title: titulo,
-                        artist: artist
-                    }
-                    )
-
-                    localStorage.setItem('favoritos', JSON.stringify(favoritos))
-                })
             }
 
         })

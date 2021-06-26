@@ -21,7 +21,6 @@ formBusqueda.addEventListener('submit', function (event) {
 
 // Fin Header y Footer
 
-
 // get favoritos del LocalStorage 
 
 
@@ -33,13 +32,30 @@ let listaFav = document.querySelector('#lista-favoritos')
 
 //Vacio la lista por las dudas. 
 listaFav.innerHTML = ''
-for (let i = 0; i < favoritos.length; i++) {
-    listaFav.innerHTML += `
 
-            <li class="corazon">
-                <a href="./detail-track.html?id=${favoritos[i].id}"><img src=${favoritos[i].imagen} alt="${favoritos[i].title}"></a>
-                <p>${favoritos[i].title}</p>
-                <p>${favoritos[i].artist}</p>
-            </li>
-            `
+// recorro el arreglo favoritos y llamo a la api por cada id guardado
+
+for (let i = 0; i < favoritos.length; i++) {
+    buscarYMostrarFavoritos(favoritos[i])
+}
+
+function buscarYMostrarFavoritos(id) {
+    let url = `https://cors-anywhere.herokuapp.com/https://api.deezer.com/track/${id}`
+
+    fetch(url)
+        .then(function(response) { 
+            return response.json();
+        })
+        .then(function(data) {
+            console.log(data)
+            
+            listaFav.innerHTML += `
+                    <li class="corazon">
+                        <a href="./detail-track.html?id=${data.id}"><img src=${data.album.cover_big} alt="${data.title}"></a>
+                        <p>${data.title}</p>
+                        <p>${data.artist.name}</p>
+                    </li>
+                    `
+            
+        })
 }

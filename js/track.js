@@ -67,12 +67,12 @@ if(recuperoStorage != null){
 
 //Chequear que el id esté en el array para cambiar el texto al usuario.
 if(favoritos.includes(id)){
-    document.querySelector('.agregarFav').innerText = "Quitar de favoritos";
+    document.querySelector('#agregarFav').innerText = "Quitar de favoritos";
 }
 
 //Cuando el usuario haga click en "agregar a favoritos _> Agregar id del gif dentro del array.
-let fav = document.querySelector('.agregarFav');
-console.log(agregarFav);
+let fav = document.querySelector('#agregarFav');
+console.log(fav);
 
 fav.addEventListener("click", function (e) {
     e.preventDefault();
@@ -81,17 +81,17 @@ fav.addEventListener("click", function (e) {
     if (favoritos.includes(id)) {
         let idASacar = favoritos.indexOf(id);
         favoritos.splice(idASacar, 1);
-        document.querySelector('.agregarFav').innerText = "Agregar a favoritos";
+        document.querySelector('#agregarFav').innerText = `Agregar a favoritos`;
     } else {
         //Guardamos el id en el array
         favoritos.push(id);
         console.log(favoritos);
-        document.querySelector('.agregarFav').innerText = "Quitar de favoritos";
+        document.querySelector('#agregarFav').innerText = `Quitar de favoritos`;
     }
 
     
     //Armamos un string
-    let favParaStorage = JSON.stringify(favoritos);
+    let agregarFavParaStorage = JSON.stringify(favoritos);
     //Lo guardamos dentro de localStorage
     localStorage.setItem('favoritos', agregarFavParaStorage);
     console.log(localStorage);
