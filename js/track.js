@@ -48,11 +48,10 @@ fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/track/${id}`)
                 <a href="./detail-artist.html?id=${artist}"> <h4 class= "headtrack">${autorTrack}</h4></a>
                 <iframe title="deezer-widget" src="https://widget.deezer.com/widget/dark/track/${id}" width="100%" height="300" frameborder="0" allowtransparency="true" allow="encrypted-media; clipboard-write"></iframe>
                 `
-    })
-    .catch(function (error) {
-        console.log(error);
-    })
-
+        })
+        .catch(function (error) {
+            console.log(error);
+        })
 
 //Agregar a playlist. 
 let favoritos = [];
@@ -88,7 +87,6 @@ fav.addEventListener("click", function (e) {
         console.log(favoritos);
         document.querySelector('#agregarFav').innerText = `Quitar de favoritos`;
     }
-
     
     //Armamos un string
     let agregarFavParaStorage = JSON.stringify(favoritos);
